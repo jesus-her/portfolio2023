@@ -22,7 +22,7 @@ export default function Project({
         priority // Prioriza la carga de la imagen
         className=" c-lesPJm-ikzLvCr-css"
       />
-      <Filter1GrainTexture />
+      {/* <Filter1GrainTexture /> */}
 
       <div className="overflow-hidden relative   rounded-lg p-4 ">
         <div className=" relative z-10 flex flex-col items-center gap-4 ">
