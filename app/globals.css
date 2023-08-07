@@ -40,17 +40,17 @@ html.dark {
   padding: 0;
 }
 
-.noise {
-  /* ... */
+/* .noise {
+
   background: linear-gradient(to top, #ececec, transparent),
     url(https://grainy-gradients.vercel.app/noise.svg);
 }
 
 html.dark .noise {
-  /* ... */
+
   background: linear-gradient(to top, #000, transparent 300%),
     url(https://grainy-gradients.vercel.app/noise.svg);
-}
+} */
 html.dark .gridLine {
   --background: #ffffff;
   --color: rgba(255, 255, 255, 0.5);
