@@ -24,7 +24,7 @@ export default function Project({
       />
       {/* <Filter1GrainTexture /> */}
 
-      <div className="overflow-hidden relative   rounded-lg p-4 bg-[rgba(255,255,255,0.2)] ">
+      <div className="overflow-hidden relative   rounded-lg p-4  ">
         <div className=" relative z-10 flex flex-col items-center gap-4 ">
           {/* <img
             src={imageUrl}
@@ -40,7 +40,7 @@ export default function Project({
             priority // Prioriza la carga de la imagen
           />
 
-          <div className="flex flex-wrap gap-2">
+          {/* <div className="flex flex-wrap gap-2">
             {tags.map((tag: string) => (
               <div
                 key={tag}
@@ -49,7 +49,7 @@ export default function Project({
                 <p className="opacity-100">{tag}</p>
               </div>
             ))}
-          </div>
+          </div> */}
           <div className=" text-black ">
             <h3 className=" font-bold text-xl  ">{title}</h3>
             <p className=" opacity-90">{description}</p>

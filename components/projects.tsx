@@ -77,8 +77,8 @@ export default function Projects() {
             style={calculateDivStyles(index, numDivs)}
           />
         ))} */}
-        {/* <div className=" my-8  masonry md:masonry-md lg:masonry-lg  "> */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className=" my-8  masonry md:masonry-md lg:masonry-lg  ">
+          {/* <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"> */}
           {projectsData.map((project, index) => (
             <React.Fragment key={index}>
               <Project {...project} />
