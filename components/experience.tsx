@@ -26,7 +26,7 @@ export default function Experience() {
       <div className="gridLine" />
       <div className=" mt-8 relative">
         {/* <Filter3Colors /> */}
-        <VerticalTimeline lineColor="">
+        <VerticalTimeline lineColor="" animate={false}>
           {experiencesData.map((item, index) => (
             <React.Fragment key={index}>
               <VerticalTimelineElement
