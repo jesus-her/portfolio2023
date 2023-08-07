@@ -34,7 +34,7 @@ const GradientText = () => {
     // Genera las nuevas estrellas al cambiar el tema
     const generateStars = () => {
       const newStars = [];
-      for (let i = 0; i < 30; i++) {
+      for (let i = 0; i < 15; i++) {
         const top = Math.random() * 100;
         const left = Math.random() * 100;
         newStars.push({ top, left });
