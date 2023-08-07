@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Filter2DiagonalLines() {
   return (
-    <div className=" opacity-80">
+    <div className=" opacity-90">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="100%"

@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Filter3Colors() {
   return (
-    <div className=" opacity-80">
+    <div className=" opacity-90">
       <svg
         viewBox="0 0 100 100"
         preserveAspectRatio="xMidYMid slice"
