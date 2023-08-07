@@ -16,7 +16,7 @@ export default function Project({
   return (
     <div className="   bg-[rgba(255,255,255,1)]   relative rounded-lg break-inside overflow-hidden m-1 mt-0">
       <Image alt="" src={imageUrl} className=" c-lesPJm-ikzLvCr-css" />
-      <Filter1GrainTexture />
+      {/* <Filter1GrainTexture /> */}
 
       <div className="overflow-hidden relative   rounded-lg p-4 bg-[rgba(255,255,255,0.2)] ">
         <div className=" relative z-10 flex flex-col items-center gap-4 ">
