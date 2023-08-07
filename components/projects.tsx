@@ -81,7 +81,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projectsData.map((project, index) => (
             <React.Fragment key={index}>
-              {/* <Project {...project} /> */}
+              <Project {...project} />
             </React.Fragment>
           ))}
         </div>
