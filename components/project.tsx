@@ -14,7 +14,7 @@ export default function Project({
   link,
 }: ProjectProps) {
   return (
-    <div className=" w-auto  bg-[rgba(255,255,255,1)]   relative rounded-lg break-inside overflow-hidden m-1 mb-2">
+    <div className="   bg-[rgba(255,255,255,1)]   relative rounded-lg break-inside overflow-hidden m-1 mt-0">
       <Image alt="" src={imageUrl} className=" c-lesPJm-ikzLvCr-css" />
       <Filter1GrainTexture />
 

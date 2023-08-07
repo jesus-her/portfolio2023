@@ -10,7 +10,6 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
-import Filter3Colors from "./filters/Filter3Colors";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
