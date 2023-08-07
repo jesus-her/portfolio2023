@@ -41,15 +41,19 @@ export default function Project({
           </div>
         </div>
         {link !== "" && (
-          <div className="flex justify-center items-center  pt-4">
-            <a className="button-spark" href={link} target="blank">
-              <span className="spark__container">
-                <span className="spark" />
-              </span>
-              <span className="backdrop" />
-              <span className="text">Discover this project</span>
-            </a>
-          </div>
+          <Link
+            href={link}
+            target="blank"
+            className="group px-7 py-3 text-white
+                   flex items-center gap-2 rounded-full shadow-lg
+                 
+                   outline-none  hover:opacity-70 bg-gradient-to-r from-[#000] via-[#000] to-[#000]
+                   
+                   "
+            onClick={() => {}}
+          >
+            Discover this project
+          </Link>
         )}
       </div>
     </div>
