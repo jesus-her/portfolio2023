@@ -22,9 +22,9 @@ export default function Project({
         priority // Prioriza la carga de la imagen
         className=" c-lesPJm-ikzLvCr-css"
       />
-      {/* <Filter1GrainTexture /> */}
+      <Filter1GrainTexture />
 
-      <div className="overflow-hidden relative   rounded-lg p-4  ">
+      <div className="overflow-hidden relative   rounded-lg p-4 ">
         <div className=" relative z-10 flex flex-col items-center gap-4 ">
           {/* <img
             src={imageUrl}
@@ -52,10 +52,10 @@ export default function Project({
           </div> */}
           <div className=" text-black ">
             <h3 className=" font-bold text-xl  ">{title}</h3>
-            <p className=" opacity-90">{description}</p>
+            <p className=" opacity-90 text-left">{description}</p>
           </div>
         </div>
-        {link !== "" && (
+        {/* {link !== "" && (
           <Link
             href={link}
             target="blank"
@@ -68,6 +68,21 @@ export default function Project({
             onClick={() => {}}
           >
             Discover this project ch
+          </Link>
+        )} */}
+        {link !== "" && (
+          <Link
+            href={link}
+            target="blank"
+            className="group px-7 py-1 text-white mt-8
+                   flex items-center gap-2 rounded-full shadow-lg
+                 
+                   outline-none  hover:opacity-70 bg-black text-center justify-center
+                   
+                   "
+            onClick={() => {}}
+          >
+            Discover this project
           </Link>
         )}
       </div>

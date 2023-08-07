@@ -239,7 +239,7 @@ html.dark .gridLine {
   filter: blur(35px);
   pointer-events: none;
   opacity: 0.7;
-  /* animation: k-jdTnBl 18s linear infinite; */
+  animation: k-jdTnBl 20s linear infinite;
 }
 
 @keyframes k-jdTnBl {
