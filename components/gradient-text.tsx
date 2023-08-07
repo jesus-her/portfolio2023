@@ -72,7 +72,7 @@ const GradientText = () => {
           </div> */}
 
           <div className=" flex gap-4 relative w-full justify-center">
-            {/* <Filter3Colors /> */}
+            <Filter3Colors />
             <Filter2DiagonalLines />
 
             <div className="  font-bold md:text-9xl text-5xl   w-fit items-center justify-center flex">
