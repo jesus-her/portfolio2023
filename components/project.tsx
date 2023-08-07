@@ -26,7 +26,7 @@ export default function Project({
         className=" c-lesPJm-ikzLvCr-css"
       />
       <Filter1GrainTexture />
-      <Filter2DiagonalLines />
+      {/* <Filter2DiagonalLines /> */}
       {/* <Filter3Colors /> */}
 
       <div className="overflow-hidden relative   rounded-lg p-4 bg-[rgba(255,255,255,.2)] ">
