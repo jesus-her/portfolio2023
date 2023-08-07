@@ -6,19 +6,19 @@ import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.05 * index,
-    },
-  }),
-};
+// const fadeInAnimationVariants = {
+//   initial: {
+//     opacity: 0,
+//     y: 100,
+//   },
+//   animate: (index: number) => ({
+//     opacity: 1,
+//     y: 0,
+//     transition: {
+//       delay: 0.05 * index,
+//     },
+//   }),
+// };
 
 export default function Skills() {
   const { ref } = useSectionInView("Skills");
@@ -38,9 +38,9 @@ export default function Skills() {
           <motion.li
             className="bg-transparent borderBlack rounded-xl px-3 py-3 "
             key={index}
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.175 }}
             viewport={{
               once: true,
             }}

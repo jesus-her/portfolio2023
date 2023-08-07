@@ -36,11 +36,11 @@ export default function Contact() {
       <div className=" gridLine " />
 
       <div className="sm:text-7xl text-5xl  my-16 p-8  relative text-white ">
-        <p className=" font-bold bg-violet-600 w-fit mb-2">Let's</p>
-        <p className=" font-bold bg-violet-600 w-fit mb-2">Work</p>
-        <p className=" font-bold bg-violet-600 w-fit mb-2">Together</p>
+        <p className=" font-bold bg-blue-600 w-fit mb-2">Let's</p>
+        <p className=" font-bold bg-orange-500 w-fit mb-2">Work</p>
+        <p className=" font-bold bg-pink-600 w-fit mb-2">Together</p>
 
-        {/* <Filter3Colors /> */}
+        <Filter3Colors />
         <Filter2DiagonalLines />
       </div>
       <div className=" flex flex-col lg:flex-row gap-8  items-center justify-center px-8 ">
