@@ -40,7 +40,7 @@ export default function Contact() {
         <p className=" font-bold bg-violet-600 w-fit mb-2">Work</p>
         <p className=" font-bold bg-violet-600 w-fit mb-2">Together</p>
 
-        <Filter3Colors />
+        {/* <Filter3Colors /> */}
         <Filter2DiagonalLines />
       </div>
       <div className=" flex flex-col lg:flex-row gap-8  items-center justify-center px-8 ">

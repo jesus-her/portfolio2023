@@ -80,10 +80,10 @@ const GradientText = () => {
           </div> */}
 
           <div className=" flex gap-4 relative w-full justify-center">
-            <Filter3Colors />
+            {/* <Filter3Colors /> */}
             <Filter2DiagonalLines />
 
-            <div className="  font-bold md:text-9xl text-5xl text-transparent bg-clip-text bg-gradient-to-b from-[#CBD7FF] via-[#E8C7FE] to-[#F5E3FD]  w-fit items-center justify-center flex">
+            <div className="  font-bold md:text-9xl text-5xl   w-fit items-center justify-center flex">
               <span>{"<"}</span>
             </div>
             <div className="font-bold md:text-8xl text-4xl text-white   w-fit    ">
@@ -102,7 +102,7 @@ const GradientText = () => {
                 <span>D</span>
               </div>
             </div>
-            <div className="  font-bold md:text-9xl text-5xl text-transparent bg-clip-text bg-gradient-to-b from-[#CBD7FF] via-[#E8C7FE] to-[#F5E3FD]  w-fit items-center justify-center flex">
+            <div className="  font-bold md:text-9xl text-5xl   w-fit items-center justify-center flex">
               <span>{"/>"}</span>
             </div>
           </div>
