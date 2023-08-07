@@ -30,21 +30,21 @@ const GradientText = () => {
 
   const { theme } = useTheme();
 
-  useEffect(() => {
-    // Genera las nuevas estrellas al cambiar el tema
-    const generateStars = () => {
-      const newStars = [];
-      for (let i = 0; i < 30; i++) {
-        const top = Math.random() * 100;
-        const left = Math.random() * 100;
-        newStars.push({ top, left });
-      }
-      //@ts-ignore
-      setStars(newStars);
-    };
+  // useEffect(() => {
+  //   // Genera las nuevas estrellas al cambiar el tema
+  //   const generateStars = () => {
+  //     const newStars = [];
+  //     for (let i = 0; i < 30; i++) {
+  //       const top = Math.random() * 100;
+  //       const left = Math.random() * 100;
+  //       newStars.push({ top, left });
+  //     }
+  //     //@ts-ignore
+  //     setStars(newStars);
+  //   };
 
-    generateStars();
-  }, [theme]);
+  //   generateStars();
+  // }, [theme]);
 
   return (
     <div
@@ -53,7 +53,7 @@ const GradientText = () => {
     >
       <div className="relative py-8 md:px-4 px-1 flex flex-col justify-center items-center">
         <div className=" flex flex-col justify-center items-center">
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -61,11 +61,11 @@ const GradientText = () => {
               duration: 0.2,
             }}
           >
-            {/* Aquí se generan las estrellas */}
+
             {stars.map((star: { top: number; left: number }, index) => (
               <Star key={index} top={star.top} left={star.left} theme={theme} />
             ))}
-          </motion.div>
+          </motion.div> */}
           {/* <div className="flex justify-between flex-col text-left mb-4 text-xs md:text-lg leading-5    border dark:border-white  border-black px-1 ">
             <span>Passionate about creating interactive web experiences.</span>
             <span>
