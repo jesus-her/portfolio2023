@@ -49,9 +49,9 @@ export default function Project({
             {tags.map((tag: string) => (
               <div
                 key={tag}
-                className="flex flex-row bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-50 border border-gray-100 px-2 py-1 text-black font-semibold"
+                className="flex flex-row bg-[rgba(255,255,255,.5)] rounded-md  border border-gray-100 px-2 py-0 text-black font-semibold"
               >
-                <p className="opacity-100">{tag}</p>
+                <p>{tag}</p>
               </div>
             ))}
           </div>
