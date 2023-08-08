@@ -45,7 +45,7 @@ export default function Project({
             priority // Prioriza la carga de la imagen
           />
 
-          {/* <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2">
             {tags.map((tag: string) => (
               <div
                 key={tag}
@@ -54,7 +54,7 @@ export default function Project({
                 <p className="opacity-100">{tag}</p>
               </div>
             ))}
-          </div> */}
+          </div>
           <div className=" text-black ">
             <h3 className=" font-bold text-xl  ">{title}</h3>
             <p className=" opacity-90 text-left">{description}</p>
@@ -82,7 +82,7 @@ export default function Project({
             className="group px-7 py-1 text-white mt-8
                    flex items-center gap-2 rounded-full shadow-lg
                  
-                   outline-none  hover:opacity-70 bg-black text-center justify-center
+                   outline-none  hover:opacity-80 bg-black text-center justify-center
                    
                    "
             onClick={() => {}}
