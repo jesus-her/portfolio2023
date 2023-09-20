@@ -76,7 +76,7 @@ export default function Hero() {
           <a
             className="group text-sm sm:text-base bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none
             transition cursor-pointer borderBlack dark:bg-black hover:opacity-70 shadow-lg"
-            href="/cv_jesus_hernandez.pdf"
+            href="/CV_JoseDeJesusHernandezNava.pdf"
             download
           >
             Download CV{" "}
