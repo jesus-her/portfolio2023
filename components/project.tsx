@@ -1,10 +1,10 @@
 import { projectsData } from "@/lib/data";
-import Filter1GrainTexture from "./filters/Filter1GrainTexture.tsx";
+
 import Link from "next/link.js";
-import Image from "next/image.js";
 import Filter2DiagonalLines from "./filters/Filter2DiagonalLines";
-import Filter3Colors from "./filters/Filter3Colors";
-// import Filter3Colors from "./filters/Filter3Colors.tsx";
+import { Button, Chip, Image } from "@nextui-org/react";
+import { HiLockClosed } from "react-icons/hi";
+import { LuLink } from "react-icons/lu";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -17,64 +17,68 @@ export default function Project({
   link,
 }: ProjectProps) {
   return (
-    <div className="   bg-[rgba(255,255,255,1)]   relative rounded-lg break-inside overflow-hidden m-1 mt-0">
-      {/* <img alt="ola" src={imageUrl} className=" c-lesPJm-ikzLvCr-css" /> */}
+    <div className="relative rounded-xl break-inside overflow-hidden mb-4  ">
       <Image
-        src={imageUrl}
         alt="Project Image"
-        priority // Prioriza la carga de la imagen
+        isBlurred
+        removeWrapper
+        src={imageUrl}
+        width={500}
+        height={500}
         className=" c-lesPJm-ikzLvCr-css"
       />
-      <Filter1GrainTexture />
-      {/* <Filter2DiagonalLines /> */}
-      {/* <Filter3Colors /> */}
+      <div className="flex flex-col gap-4 z-10 overflow-hidden relative rounded-lg p-4 ">
+        <Filter2DiagonalLines />
+        <h3 className="font-bold text-4xl">{title}</h3>
+        <Image
+          isBlurred
+          src={imageUrl}
+          alt="Project Image"
+          className="rounded-lg mb-6"
+        />
+        <div className="flex flex-wrap gap-2 items-center justify-center">
+          {tags.map((tag: string) => (
+            <Chip size="sm" color="warning" key={tag}>
+              {tag}
+            </Chip>
+          ))}
+        </div>
+        <p className="text-left text-sm leading-relaxed text-white font-semibold">
+          {description}
+        </p>
 
-      <div className="overflow-hidden relative   rounded-lg p-4 bg-[rgba(255,255,255,.2)] ">
+        {link && (
+          <Button
+            variant="shadow"
+            color="primary"
+            endContent={<LuLink />}
+            as={Link}
+            href={link}
+            target="blank"
+            className="font-semibold  px-6 py-3 mt-6 uppercase shadow-md shadow-black/30"
+          >
+            Discover this project
+          </Button>
+        )}
+      </div>
+
+      {/* <div className="flex flex-col gap-2 z-10 overflow-hidden relative rounded-lg p-4 ">
         <div className=" relative z-10 flex flex-col items-center gap-4  ">
-          {/* <img
-            src={imageUrl}
-            alt="Card Image"
-            className=" w-72 h-auto  object-cover  rounded-lg"
-          /> */}
           <Image
             src={imageUrl}
             alt="Project Image"
-            width={800} // Establece el ancho de la imagen
-            height={600} // Establece la altura de la imagen
-            layout="responsive" // Permite que la imagen se ajuste al contenedor
-            priority // Prioriza la carga de la imagen
+            width={800}
+            height={600}
+            layout="responsive"
+            priority
           />
 
-          <div className="flex flex-wrap gap-2">
-            {tags.map((tag: string) => (
-              <div
-                key={tag}
-                className="flex flex-row bg-[rgba(255,255,255,.5)] rounded-md  border border-gray-100 px-2 py-0 text-black font-semibold"
-              >
-                <p>{tag}</p>
-              </div>
-            ))}
-          </div>
           <div className=" text-black ">
             <h3 className=" font-bold text-xl  ">{title}</h3>
             <p className=" opacity-90 text-left">{description}</p>
           </div>
         </div>
-        {/* {link !== "" && (
-          <Link
-            href={link}
-            target="blank"
-            className="group px-7 py-3 text-white
-                   flex items-center gap-2 rounded-full shadow-lg
-                 
-                   outline-none  hover:opacity-70 bg-black
-                   
-                   "
-            onClick={() => {}}
-          >
-            Discover this project ch
-          </Link>
-        )} */}
+
         {link !== "" && (
           <Link
             href={link}
@@ -90,7 +94,7 @@ export default function Project({
             Discover this project
           </Link>
         )}
-      </div>
+      </div> */}
     </div>
   );
 }

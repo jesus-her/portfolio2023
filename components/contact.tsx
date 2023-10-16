@@ -8,6 +8,8 @@ import { useSectionInView } from "@/lib/hooks";
 import Link from "next/link";
 import Filter3Colors from "./filters/Filter3Colors";
 import Filter2DiagonalLines from "./filters/Filter2DiagonalLines";
+import { Button } from "@nextui-org/react";
+import { BsSend } from "react-icons/bs";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -16,7 +18,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="mb-20 sm:mb-28 text-center scroll-mt-4 relative w-screen pb-12 overflow-x-hidden leading-8 "
+      className="mb-20 sm:mb-28 text-center scroll-mt-4 relative  overflow-x-hidden leading-8 "
       initial={{
         opacity: 0,
       }}
@@ -30,42 +32,24 @@ export default function Contact() {
         once: true,
       }}
     >
-      <div className=" gridLine " />
+      {/* <SectionHeading>{"Contact"}</SectionHeading> */}
 
-      <SectionHeading>{"Contact"}</SectionHeading>
-      <div className=" gridLine " />
-
-      <div className="sm:text-7xl text-5xl  my-16 p-8  relative text-white ">
-        <p className=" font-bold bg-blue-600 w-fit mb-2">Let's</p>
-        <p className=" font-bold bg-orange-500 w-fit mb-2">Work</p>
-        <p className=" font-bold bg-pink-600 w-fit mb-2">Together</p>
-
-        <Filter3Colors />
-        <Filter2DiagonalLines />
+      <div className="sm:text-6xl text-4xl relative  font-bold gap-4 flex flex-col ">
+        <p>Let's</p>
+        <p>Work</p>
+        <p>Together</p>
       </div>
-      <div className=" flex flex-col lg:flex-row gap-8  items-center justify-center px-8 ">
-        <a
+      <div className="mt-8 ">
+        <Button
+          endContent={<BsSend />}
+          as={Link}
           href="mailto:jesus10.hn@gmail.com"
           target="blank"
-          className="button-spark"
+          variant="shadow"
+          color="primary"
         >
-          <span className="spark__container">
-            <span className="spark" />
-          </span>
-          <span className="backdrop" />
-          <span className="text md:text-4xl text-xl">jesus10.hn@gmail.com</span>
-        </a>
-        <a
-          href="https://wa.me/522462224323"
-          target="blank"
-          className="button-spark"
-        >
-          <span className="spark__container">
-            <span className="spark" />
-          </span>
-          <span className="backdrop" />
-          <span className="text md:text-4xl text-xl">+52 246 222 4323</span>
-        </a>
+          jesus10.hn@gmail.com
+        </Button>
       </div>
     </motion.section>
   );

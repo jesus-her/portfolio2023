@@ -19,11 +19,10 @@ export default function Experience() {
     <section
       id="experience"
       ref={ref}
-      className="mb-16  text-center leading-8  scroll-mt-4 "
+      className="text-center leading-8  scroll-mt-4 "
     >
-      <div className="gridLine" />
-      <SectionHeading>experience</SectionHeading>
-      <div className="gridLine" />
+      <SectionHeading>Experience</SectionHeading>
+
       <div className=" mt-8 relative">
         {/* <Filter3Colors /> */}
         <VerticalTimeline lineColor="" animate={false}>

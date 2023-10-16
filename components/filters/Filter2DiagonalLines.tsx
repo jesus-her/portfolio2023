@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Filter2DiagonalLines() {
   return (
-    <div className=" opacity-90">
+    <div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="100%"
@@ -15,8 +15,8 @@ export default function Filter2DiagonalLines() {
           <pattern
             id="pattern-white-false"
             patternUnits="userSpaceOnUse"
-            width="3.5"
-            height="3.5"
+            width="10"
+            height="10"
             patternTransform="rotate(45)"
           >
             <line
@@ -25,7 +25,7 @@ export default function Filter2DiagonalLines() {
               x2="0"
               y2="3.5"
               stroke="white"
-              stroke-width="1"
+              stroke-width="2"
             ></line>
           </pattern>
         </defs>{" "}

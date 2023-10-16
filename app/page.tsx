@@ -9,14 +9,16 @@ import Skills from "@/components/skills";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center px-4  relative">
+    <main className="flex flex-col items-center px-4 max-w-5xl mx-auto overflow-x-hidden ">
       <Intro />
       <SectionDivider />
       <About />
+      <SectionDivider />
 
       <Projects />
 
       <Skills />
+      <SectionDivider />
 
       <Experience />
 

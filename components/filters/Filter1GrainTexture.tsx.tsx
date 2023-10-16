@@ -9,7 +9,7 @@ export default function Filter1GrainTexture() {
         <filter id="noise">
           <feTurbulence
             type="fractalNoise"
-            baseFrequency="0.5"
+            baseFrequency="0.3"
             numOctaves="2"
             stitchTiles="stitch"
           />

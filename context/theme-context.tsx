@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, createContext, useContext } from "react";
+import { NextUIProvider } from "@nextui-org/react";
 
 type Theme = "light" | "dark";
 
@@ -48,14 +49,16 @@ export default function ThemeContextProvider({
   }, []);
 
   return (
-    <ThemeContext.Provider
-      value={{
-        theme,
-        toggleTheme,
-      }}
-    >
-      {children}
-    </ThemeContext.Provider>
+    <NextUIProvider>
+      <ThemeContext.Provider
+        value={{
+          theme,
+          toggleTheme,
+        }}
+      >
+        {children}
+      </ThemeContext.Provider>
+    </NextUIProvider>
   );
 }
 

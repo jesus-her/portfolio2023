@@ -12,16 +12,16 @@
 
 @layer utilities {
   .masonry {
-    column-gap: 0px;
+    column-gap: 16px;
     column-count: 1;
   }
 
   .masonry-md {
-    column-gap: 0px;
+    column-gap: 16px;
     column-count: 2;
   }
   .masonry-lg {
-    column-gap: 0px;
+    column-gap: 16px;
     column-count: 3;
   }
   .break-inside {
@@ -55,7 +55,7 @@ html.dark .gridLine {
   --background: #ffffff;
   --color: rgba(255, 255, 255, 0.5);
   --height: 1px;
-  --width: 16px;
+  --width: 33px;
   --fade-stop: 90%;
   /* Bleed in or out from the container */
   --offset: 0px;
@@ -236,18 +236,23 @@ html.dark .gridLine {
   position: absolute;
   top: 0;
   left: 0;
-  filter: blur(30px) saturate(300%);
+  filter: blur(35px) saturate(400%);
+  rotate: 30deg;
   pointer-events: none;
-  opacity: 0.7;
-  animation: k-jdTnBl 20s linear infinite;
+  opacity: 1;
+  transform: scale(10) translateY(3.5rem);
+  /* animation: k-jdTnBl 5s linear infinite; */
 }
 
 @keyframes k-jdTnBl {
   0% {
-    transform: rotate(0deg) scale(1);
+    transform: scale(10) translateY(3rem);
+  }
+  30% {
+    transform: scale(10) translateY(-3rem);
   }
   100% {
-    transform: rotate(360deg) scale(1);
+    transform: scale(10) translateY(3rem);
   }
 }
 
