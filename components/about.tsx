@@ -74,7 +74,7 @@ export default function About() {
         </div>
         <Image
           isBlurred
-          src={"https://i.imgur.com/ZDbY7SK.jpg"}
+          src={"https://i.imgur.com/ekDnwjM.jpg"}
           alt="Project Image"
           width={369}
           height={369}

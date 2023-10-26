@@ -81,11 +81,11 @@ export default function Hero() {
         <Button
           radius="full"
           startContent={<HiDownload size={22} />}
-          href="/CV_JoseDeJesusHernandezNava.pdf"
+          href="/Jesus_HN_cv.pdf"
           variant="bordered"
           color="primary"
         >
-          <a href="/CV_JoseDeJesusHernandezNava.pdf" download>
+          <a href="/Jesus_HN_cv.pdf" download>
             Download CV{" "}
           </a>
         </Button>
