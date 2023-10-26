@@ -32,10 +32,17 @@ export default function Skills() {
     >
       <SectionHeading small>My Skills</SectionHeading>
 
-      <ul className="flex flex-wrap justify-center md:gap-8  text-lg gap-4  mt-8 ">
+      <ul className="flex flex-wrap justify-center md:gap-6  text-lg gap-4  mt-8 ">
         {skillsData.map((item, index) => (
           <li key={index}>
-            <Snippet hideCopyButton variant="flat" color={item.color} size="lg">
+            <Snippet
+              hideCopyButton
+              variant="flat"
+              radius="lg"
+              className=" rounded-full"
+              color={item.color}
+              size="lg"
+            >
               {item.title}
             </Snippet>
           </li>

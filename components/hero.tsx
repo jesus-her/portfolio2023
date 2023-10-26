@@ -7,7 +7,7 @@ import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { Button } from "@nextui-org/react";
+import { Button, Chip, Spacer } from "@nextui-org/react";
 
 export default function Hero() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -26,20 +26,34 @@ export default function Hero() {
           type: "tween",
           duration: 0.2,
         }}
-        className="font-bold text-7xl"
+        className="font-bold text-7xl "
       >
-        <h1>Hello ;)</h1>
+        <h1>Hello!</h1>
+        <Spacer y={8} />
+        <Chip
+          variant="flat"
+          color="default"
+          className=" py-4 w-auto px-4 h-auto text-6xl"
+        >
+          ¯\_(ツ)_/¯
+        </Chip>
+        {/* <Spacer y={8} /> */}
       </motion.div>
 
       <motion.h2
-        className="text-2xl font-bold !leading-[1.5] sm:text-4xl "
+        className="text-4xl font-bold !leading-[1.5] sm:text-5xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         I'm Jesús.
         <br />
-        full-stack developer <span className=" font-light">and </span>
-        IT enthusiast.
+        <span className=" bg-clip-text bg-gradient-to-b from-[#00D4DA] via-[#00B9E2] to-[#0080EE] text-transparent">
+          full-stack developer
+        </span>{" "}
+        and{" "}
+        <span className=" bg-clip-text bg-gradient-to-b from-[#0080EE] via-[#00B9E2] to-[#00D4DA] text-transparent">
+          IT enthusiast.
+        </span>
       </motion.h2>
 
       <motion.div
@@ -51,11 +65,12 @@ export default function Hero() {
         }}
       >
         <Button
+          radius="full"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
-          endContent={<BsArrowRight />}
+          endContent={<BsArrowRight size={22} />}
           href="#contact"
           as={Link}
           variant="shadow"
@@ -64,17 +79,18 @@ export default function Hero() {
           Contact me here
         </Button>
         <Button
-          startContent={<HiDownload />}
+          radius="full"
+          startContent={<HiDownload size={22} />}
           href="/CV_JoseDeJesusHernandezNava.pdf"
           variant="bordered"
           color="primary"
         >
-          <a href="/bpl_cv.pdf" download>
+          <a href="/CV_JoseDeJesusHernandezNava.pdf" download>
             Download CV{" "}
           </a>
         </Button>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         className="flex  items-center justify-center gap-2"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -84,24 +100,26 @@ export default function Hero() {
       >
         <Button
           aria-label="LinkenIn Button"
-          isIconOnly
           as={Link}
+          radius="full"
           variant="bordered"
           href="https://www.linkedin.com/in/jos%C3%A9-de-jes%C3%BAs-hern%C3%A1ndez-nava-457b35235/"
           target="blank"
+          startContent={<BsLinkedin className=" rounded-full " size={22} />}
         >
-          <BsLinkedin size={24} />
+          LinkedIn
         </Button>
         <Button
-          isIconOnly
+          radius="full"
           as={Link}
           variant="bordered"
           href="https://github.com/jesus-her"
           target="blank"
+          startContent={<BsGithub className=" rounded-full  " size={22} />}
         >
-          <BsGithub size={24} />
+          Github
         </Button>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 }

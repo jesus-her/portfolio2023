@@ -1,39 +1,35 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
-import Link from "next/link";
-import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import ThemeSwitch from "./theme-switch";
+//https://www.npmjs.com/package/clsx
+//@ts-ignore
+import clsx from "clsx";
 
 export default function NavBar() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
   return (
-    <header className="z-[999] relative ">
-      <motion.nav
-        className="flex fixed bottom-[1rem] left-1/2 h-fit -translate-x-1/2 bg-white  rounded-full  w-auto items-center
-        justify-center dark:bg-black shadow-xl p-1 overflow-hidden "
-      >
-        <ul
-          className="flex  flex-row items-center justify-center gap-y-1
-          font-medium text-gray-500 w-[initial] gap-2  border-[#000] border-opacity-20 dark:border-[#fff] dark:border-opacity-10 p-1 border-[1px] rounded-full  "
-        >
+    <header className="flex justify-center items-center fixed bottom-2 w-screen z-[11]">
+      <motion.nav className="dark:bg-white bg-black shadow-2xl rounded-full px-4 py-2 w-fit">
+        <ul className="flex items-center justify-center font-medium text-gray-400 gap-2">
           {links.map((link, index) => (
             <motion.li
-              className=" h-10 w-10 flex  items-center justify-center relative "
+              className="relative"
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
                 className={clsx(
-                  "flex items-center text-lg px-1  justify-center w-fit hover:text-black transition dark:text-gray-500 dark:hover:text-gray-300",
+                  "flex flex-col text-[10px] items-center justify-center w-fit  transition px-1",
                   {
-                    "text-black dark:text-white": activeSection === link.name,
+                    "text-white dark:text-[#000]": activeSection === link.name,
                   }
                 )}
                 href={link.hash}
@@ -42,37 +38,27 @@ export default function NavBar() {
                   setTimeOfLastClick(Date.now());
                 }}
               >
-                {link.icon}
+                <div className=" text-base">{link.icon}</div>
 
-                {/* {link.name} */}
+                {link.name}
 
                 {link.name === activeSection && (
-                  <>
-                    <motion.span
-                      className={`bg-[#f0f0f0] rounded-full ${
-                        index === 0 ? "rounded-r-lg " : ""
-                      }${
-                        index === links.length - 1 ? "rounded-l-lg " : ""
-                      } absolute inset-0  -z-10 dark:bg-[#2c2c2c]`}
-                      layoutId="activeSection"
-                      transition={{
-                        type: "spring",
-                        stiffness: 100,
-                        damping: 20,
-                      }}
-                    >
-                      <motion.span
-                        className={`bg-[#fff] shadow-lg shadow-[#fff] opacity-100 dark:shadow-black dark:bg-black blur-md invert brightness-200  inset-0 w-5 h-2 mx-auto my-auto absolute -bottom-10  rounded-full `}
-                      ></motion.span>
-                    </motion.span>
-                  </>
+                  <motion.span
+                    className={`bg-[#f0f0f0] rounded-full w-1 h-1 absolute -bottom-1  dark:bg-[#000]`}
+                    layoutId="activeSection"
+                    transition={{
+                      type: "spring",
+                      stiffness: 100,
+                      damping: 20,
+                    }}
+                  />
                 )}
               </Link>
             </motion.li>
           ))}
         </ul>
-        <ThemeSwitch />
       </motion.nav>
+      <ThemeSwitch />
     </header>
   );
 }

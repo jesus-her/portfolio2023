@@ -1,10 +1,10 @@
 import { projectsData } from "@/lib/data";
 
-import Link from "next/link.js";
 import Filter2DiagonalLines from "./filters/Filter2DiagonalLines";
-import { Button, Chip, Image } from "@nextui-org/react";
-import { HiLockClosed } from "react-icons/hi";
-import { LuLink } from "react-icons/lu";
+import { Button, Chip, Image, Snippet, Link } from "@nextui-org/react";
+import { LuAlignCenterHorizontal, LuAnchor } from "react-icons/lu";
+import { CgAnchor } from "react-icons/cg";
+import { FaAnchor } from "react-icons/fa";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -17,33 +17,34 @@ export default function Project({
   link,
 }: ProjectProps) {
   return (
-    <div className="relative rounded-xl break-inside overflow-hidden mb-4  ">
-      <Image
-        alt="Project Image"
-        isBlurred
-        removeWrapper
-        src={imageUrl}
-        width={500}
-        height={500}
-        className=" c-lesPJm-ikzLvCr-css"
-      />
+    <div className="relative rounded-xl break-inside overflow-hidden mb-4 border shadow-sm dark:border-[#2c2c2c] border-gray-200">
       <div className="flex flex-col gap-4 z-10 overflow-hidden relative rounded-lg p-4 ">
-        <Filter2DiagonalLines />
-        <h3 className="font-bold text-4xl">{title}</h3>
-        <Image
-          isBlurred
-          src={imageUrl}
-          alt="Project Image"
-          className="rounded-lg mb-6"
-        />
+        <div className=" relative  rounded-xl flex flex-col gap-4 py-4 px-2">
+          <Filter2DiagonalLines />
+          <Image
+            isBlurred
+            src={imageUrl}
+            alt="Project Image"
+            removeWrapper
+            className=" skills-blur "
+          />
+          <h3 className="font-bold text-4xl ">{title}</h3>
+          <Image
+            isBlurred
+            // removeWrapper
+            src={imageUrl}
+            alt="Project Image"
+            className="rounded-lg mb-6"
+          />
+        </div>
         <div className="flex flex-wrap gap-2 items-center justify-center">
           {tags.map((tag: string) => (
-            <Chip size="sm" color="warning" key={tag}>
+            <Chip size="sm" color="default" variant="flat" key={tag}>
               {tag}
             </Chip>
           ))}
         </div>
-        <p className="text-left text-sm leading-relaxed text-white font-semibold">
+        <p className="text-left text-sm leading-relaxed font-semibold">
           {description}
         </p>
 
@@ -51,50 +52,19 @@ export default function Project({
           <Button
             variant="shadow"
             color="primary"
-            endContent={<LuLink />}
             as={Link}
             href={link}
+            radius="full"
             target="blank"
-            className="font-semibold  px-6 py-3 mt-6 uppercase shadow-md shadow-black/30"
+            className="font-semibold dark:bg-white bg-black border px-6 py-3 mt-6 uppercase shadow-md shadow-black/30"
           >
-            Discover this project
+            {/* Discover this project */}
+            <Link showAnchorIcon className=" dark:text-black text-white">
+              Discover
+            </Link>
           </Button>
         )}
       </div>
-
-      {/* <div className="flex flex-col gap-2 z-10 overflow-hidden relative rounded-lg p-4 ">
-        <div className=" relative z-10 flex flex-col items-center gap-4  ">
-          <Image
-            src={imageUrl}
-            alt="Project Image"
-            width={800}
-            height={600}
-            layout="responsive"
-            priority
-          />
-
-          <div className=" text-black ">
-            <h3 className=" font-bold text-xl  ">{title}</h3>
-            <p className=" opacity-90 text-left">{description}</p>
-          </div>
-        </div>
-
-        {link !== "" && (
-          <Link
-            href={link}
-            target="blank"
-            className="group px-7 py-1 text-white mt-8
-                   flex items-center gap-2 rounded-full shadow-lg
-                 
-                   outline-none  hover:opacity-80 bg-black text-center justify-center
-                   
-                   "
-            onClick={() => {}}
-          >
-            Discover this project
-          </Link>
-        )}
-      </div> */}
     </div>
   );
 }

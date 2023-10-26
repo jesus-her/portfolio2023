@@ -228,15 +228,32 @@ html.dark .gridLine {
   display: none;
   margin-top: 16px;
 }
-
-.c-lesPJm-ikzLvCr-css {
+.skills-blur {
   width: 100%;
   object-fit: cover;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  filter: blur(35px) saturate(400%);
+  filter: blur(90px) saturate(1500%);
+  pointer-events: none;
+  animation: scaleAnimation 4s infinite alternate ease-in-out;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(0.6);
+  }
+}
+.c-lesPJm-ikzLvCr-css {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(100px) saturate(500%);
   rotate: 30deg;
   pointer-events: none;
   opacity: 1;
@@ -413,6 +430,6 @@ html.dark .text {
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 0.3;
+  opacity: 0.2;
   mix-blend-mode: overlay;
 }

@@ -18,7 +18,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="mb-20 sm:mb-28 text-center scroll-mt-4 relative  overflow-x-hidden leading-8 "
+      className="mb-20 sm:mb-28 text-center scroll-mt-4 relative leading-8 "
       initial={{
         opacity: 0,
       }}
@@ -39,8 +39,9 @@ export default function Contact() {
         <p>Work</p>
         <p>Together</p>
       </div>
-      <div className="mt-8 ">
+      <div className="mt-8">
         <Button
+          radius="full"
           endContent={<BsSend />}
           as={Link}
           href="mailto:jesus10.hn@gmail.com"

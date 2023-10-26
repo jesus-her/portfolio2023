@@ -1,8 +1,10 @@
 "use client";
 
+import { useTheme } from "@/context/theme-context";
 import React from "react";
 
 export default function Filter2DiagonalLines() {
+  const { theme } = useTheme();
   return (
     <div>
       <svg
@@ -15,8 +17,8 @@ export default function Filter2DiagonalLines() {
           <pattern
             id="pattern-white-false"
             patternUnits="userSpaceOnUse"
-            width="10"
-            height="10"
+            width="7"
+            height="7"
             patternTransform="rotate(45)"
           >
             <line
@@ -24,8 +26,8 @@ export default function Filter2DiagonalLines() {
               y="0"
               x2="0"
               y2="3.5"
-              stroke="white"
-              stroke-width="2"
+              stroke={theme === "light" ? "#000" : "#fff"}
+              stroke-width="1"
             ></line>
           </pattern>
         </defs>{" "}

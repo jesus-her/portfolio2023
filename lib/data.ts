@@ -1,15 +1,32 @@
 import React from "react";
-import { CgMail, CgOptions, CgWorkAlt } from "react-icons/cg";
 import {
+  CgMail,
+  CgOptions,
+  CgSmile,
+  CgSmileMouthOpen,
+  CgWorkAlt,
+} from "react-icons/cg";
+import {
+  FaCube,
+  FaPaperPlane,
   FaPencilAlt,
   FaProjectDiagram,
   FaReact,
+  FaSmileBeam,
   FaUserAstronaut,
 } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
 import { FaHome } from "react-icons/fa";
-import { BsMailbox, BsPuzzleFill, BsStack } from "react-icons/bs";
+import {
+  BsCheckCircleFill,
+  BsMailbox,
+  BsPeopleFill,
+  BsPuzzleFill,
+  BsRocketTakeoffFill,
+  BsSpeakerFill,
+  BsStack,
+} from "react-icons/bs";
 import finanz from "@/public/finanz.jpg";
 import lilpix from "@/public/lilpix.jpg";
 import parkupadmin from "@/public/parkupadmin.jpg";
@@ -18,7 +35,7 @@ import estudihambre from "@/public/estudihambre.jpg";
 import parkupappimg from "@/public/parkupapp.jpg";
 import artist from "@/public/artist.jpg";
 import lilpixweb from "@/public/lilpixweb.jpg";
-import { HiHome } from "react-icons/hi";
+import { HiHand, HiHome } from "react-icons/hi";
 
 export const links = [
   {
@@ -172,7 +189,7 @@ export const projectsData = [
     tags: ["React", "CSS", "Strapi"],
     imageUrl: "https://i.imgur.com/FTqP56t.png",
     date: "2021 - present",
-    link: "https://lilpix.netlify.app/",
+    link: "",
   },
 ] as const;
 
@@ -317,5 +334,42 @@ export const skillsData = [
   {
     title: "Prisma",
     color: "default",
+  },
+] as const;
+
+export const cards = [
+  {
+    title: "Problem-solving ability",
+    description: "I am committed to make each project have a unique design.",
+    icon: React.createElement(FaCube),
+  },
+
+  {
+    title: "Teamwork skills",
+    description: "I am committed to make each project have a unique design.",
+    icon: React.createElement(BsPeopleFill),
+  },
+  {
+    title: "Effective communication",
+    description: "I am committed to make each project have a unique design.",
+    icon: React.createElement(FaPaperPlane),
+  },
+  {
+    title: "Agility and continuous learning",
+    description: "I am committed to make each project have a unique design.",
+    icon: React.createElement(BsRocketTakeoffFill),
+  },
+
+  {
+    title: "Positive attitude",
+    description: "I am committed to make each project have a unique design.",
+    icon: React.createElement(FaSmileBeam),
+  },
+
+  {
+    title: "Responsibility",
+    description:
+      "I always deliver on the objectives that are set from the beginning and accept the challenges that come with them.",
+    icon: React.createElement(BsCheckCircleFill),
   },
 ] as const;

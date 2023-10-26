@@ -6,6 +6,7 @@ import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 import NavBar from "@/components/navbar";
 import Filter3Colors from "@/components/filters/Filter3Colors";
+import ThemeSwitch from "@/components/theme-switch";
 
 const inter = Inter({ subsets: ["latin"] });
 
