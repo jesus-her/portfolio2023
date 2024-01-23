@@ -1,19 +1,20 @@
-"use client";
+'use client'
 
-import { useTheme } from "@/context/theme-context";
-import React from "react";
-import { BsMoon, BsSun } from "react-icons/bs";
+import { useTheme } from '@/context/theme-context'
+import { Switch } from '@nextui-org/react'
+import React from 'react'
+import { BsMoon, BsSun } from 'react-icons/bs'
 
-export default function ThemeSwitch() {
-  const { theme, toggleTheme } = useTheme();
+export default function ThemeSwitch () {
+  const { theme, toggleTheme } = useTheme()
 
   return (
-    <button
-      className=" bg-black   backdrop-blur-[0.5rem]    text-white dark:text-black
-      shadow-2xl rounded-full flex items-center justify-center hover:opacity-90 dark:bg-[#f0f0f0] h-10 w-10 ml-2"
+    <Switch
       onClick={toggleTheme}
-    >
-      {theme === "dark" ? <BsSun /> : <BsMoon />}
-    </button>
-  );
+      color='warning'
+      isSelected={theme === 'light'}
+      startContent={theme === 'dark' ? <BsMoon /> : <BsSun />}
+      endContent={theme === 'light' ? <BsSun /> : <BsMoon />}
+    ></Switch>
+  )
 }
