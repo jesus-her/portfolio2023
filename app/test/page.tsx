@@ -147,8 +147,8 @@ export default function CheckoutForm () {
         value='03'
       />
       <input
+        type='text'
         className=' w-full p-3 my-3'
-        type='hidden'
         name='REFERENCE3D'
         id='reference3d'
       />
