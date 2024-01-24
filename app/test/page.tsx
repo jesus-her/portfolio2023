@@ -134,12 +134,7 @@ export default function CheckoutForm () {
         name='MERCHANT_CITY'
         value='TIJUANA'
       />
-      <input
-        className=' w-full p-3 my-3'
-        type='hidden'
-        name='FORWARD_PATH'
-        value='https://www.commercemarketmimexa.com'
-      />
+      <input type='text' className=' w-full p-3 my-3' name='FORWARD_PATH' />
       <input
         className=' w-full p-3 my-3'
         type='hidden'
