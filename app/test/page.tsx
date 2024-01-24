@@ -73,7 +73,7 @@ export default function CheckoutForm () {
     <form onSubmit={handleSubmit}>
       <div>
         <label>
-          Numero de tarjeta *
+          Numero de tarjeta * 2
           <Input
             type='text'
             value={cardNumber}
