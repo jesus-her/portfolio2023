@@ -56,7 +56,7 @@ export default function CheckoutForm () {
       POSTAL_CODE: '90670',
       STATE: 'NL',
       STREET: '3 de marzo',
-      THREED_VERSION: '2',
+      THREED_VERSION: 2,
       MOBILE_PHONE: '2462224323',
       CREDIT_TYPE: 'DB'
     }
