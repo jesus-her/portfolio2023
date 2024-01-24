@@ -114,7 +114,7 @@ export default function CheckoutForm () {
         className=' w-full p-3 my-3'
         type='hidden'
         name='CARD_TYPE'
-        value='VISA'
+        value='MC'
       />
       <input
         className=' w-full p-3 my-3'
@@ -163,7 +163,7 @@ export default function CheckoutForm () {
         className=' w-full p-3 my-3'
         type='hidden'
         name='EMAIL'
-        value='correo@example.com'
+        value='jesus10.hn@gmail.com'
       />
       <input
         className=' w-full p-3 my-3'
