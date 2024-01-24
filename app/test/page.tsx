@@ -57,7 +57,7 @@ export default function CheckoutForm () {
       POSTAL_CODE: '90670',
       STATE: 'NL',
       STREET: '3 de marzo',
-      THREED_VERSION: '2',
+      THREED_VERSION: 2,
       MOBILE_PHONE: '2462224323',
       CREDIT_TYPE: 'DB'
     }
@@ -71,12 +71,12 @@ export default function CheckoutForm () {
 
   return (
     <form
-      className=' flex flex-col justify-center items-center gap-4 border max-w-sm'
+      className=' flex flex-col justify-center items-center gap-4 border max-w-sm self-center my-12'
       onSubmit={handleSubmit}
     >
       <div>
         <label>
-          Numero de tarjeta * 2
+          Numero de tarjeta * 3
           <Input
             type='text'
             value={cardNumber}
