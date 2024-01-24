@@ -69,7 +69,13 @@ export default function CheckoutForm () {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
           },
-          body: new URLSearchParams(body).toString()
+          body: Object.keys(body)
+            .map(
+              key =>
+                //@ts-ignore
+                encodeURIComponent(key) + '=' + encodeURIComponent(body[key])
+            )
+            .join('&')
         }
       )
 
