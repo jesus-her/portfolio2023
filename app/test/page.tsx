@@ -1,4 +1,5 @@
 'use client'
+import { post3DSecure } from '@/lib/actions'
 import { Button, Input } from '@nextui-org/react'
 import { useState } from 'react'
 
@@ -7,15 +8,6 @@ export default function CheckoutForm () {
   const [expMonth, setExpMonth] = useState('')
   const [expYear, setExpYear] = useState('')
   const [cvv, setCvv] = useState('')
-  const payworksConfig = {
-    user: 'CO924535711',
-    password: '.MimexA89.',
-    merchant: '9273397',
-    terminal: '92733971',
-    forwardPath: 'https://www.commercemarketmimexa.com', // Endpoint para manejar la respuesta de 3D Secure
-    merchantName: 'COMMERCE & MARKET MIME', // Reemplaza con el nombre de tu comercio
-    merchantCity: 'TIJUANA' // Reemplaza con la ciudad de tu comercio
-  }
 
   function generateNumericControlNumber (length: number) {
     let result = ''
@@ -27,6 +19,15 @@ export default function CheckoutForm () {
   async function handleSubmit (event: any) {
     event.preventDefault()
 
+    const payworksConfig = {
+      user: 'CO924535711',
+      password: '.MimexA89.',
+      merchant: '9273397',
+      terminal: '92733971',
+      forwardPath: 'https://www.commercemarketmimexa.com', // Endpoint para manejar la respuesta de 3D Secure
+      merchantName: 'COMMERCE & MARKET MIME', // Reemplaza con el nombre de tu comercio
+      merchantCity: 'TIJUANA' // Reemplaza con la ciudad de tu comercio
+    }
     const paymentDetails = {
       card_number: cardNumber,
       card_exp: '09/31',
@@ -56,42 +57,16 @@ export default function CheckoutForm () {
       POSTAL_CODE: '90670',
       STATE: 'NL',
       STREET: '3 de marzo',
-      THREED_VERSION: 2,
+      THREED_VERSION: '2',
       MOBILE_PHONE: '2462224323',
       CREDIT_TYPE: 'DB'
     }
 
-    try {
-      const response = await fetch(
-        'https://via.banorte.com/secure3d/Solucion3DSecure.htm',
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-          },
-          body: Object.keys(body)
-            .map(
-              key =>
-                //@ts-ignore
-                encodeURIComponent(key) + '=' + encodeURIComponent(body[key])
-            )
-            .join('&')
-        }
-      )
-
-      // Aquí manejarías la respuesta
-      if (response.ok) {
-        const responseData = await response.json()
-        console.log(responseData)
-
-        // Haz algo con responseData
-      } else {
-        // Manejar errores
-        console.error('Error en la petición:', response.status)
-      }
-    } catch (error) {
-      console.error('Error al realizar la petición:', error)
-    }
+    post3DSecure(body)
+      .then(res => {
+        console.log('RES: ', res)
+      })
+      .catch(error => console.log(error))
   }
 
   return (
