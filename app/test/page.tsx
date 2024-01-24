@@ -5,8 +5,7 @@ import { useState } from 'react'
 
 export default function CheckoutForm () {
   const [cardNumber, setCardNumber] = useState('')
-  const [expMonth, setExpMonth] = useState('')
-  const [expYear, setExpYear] = useState('')
+
   const [cvv, setCvv] = useState('')
 
   function generateNumericControlNumber (length: number) {
@@ -41,7 +40,7 @@ export default function CheckoutForm () {
     const body = {
       CARD_NUMBER: paymentDetails.card_number,
       CARD_EXP: paymentDetails.card_exp,
-      AMOUNT: '1.00',
+      AMOUNT: 1.0,
       CARD_TYPE: 'VISA',
       MERCHANT_ID: payworksConfig.merchant,
       MERCHANT_NAME: payworksConfig.merchantName,
@@ -86,16 +85,6 @@ export default function CheckoutForm () {
         </label>
       </div>
 
-      {/* <div>
-        <label>
-          Código de seguridad *
-          <input
-            type='text'
-            value={cvv}
-            onChange={e => setCvv(e.target.value)}
-          />
-        </label>
-      </div> */}
       <div>
         <Button type='submit'>Comprar Ahora</Button>
       </div>
