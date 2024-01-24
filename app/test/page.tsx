@@ -70,7 +70,10 @@ export default function CheckoutForm () {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form
+      className=' flex flex-col justify-center items-center gap-4 border max-w-sm'
+      onSubmit={handleSubmit}
+    >
       <div>
         <label>
           Numero de tarjeta * 2

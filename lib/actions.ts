@@ -8,10 +8,10 @@ export async function post3DSecure (body: any) {
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded'
     },
-    body: new URLSearchParams(body).toString()
-    // body: Object.keys(body)
-    //   .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(body[key]))
-    //   .join('&')
+    // body: new URLSearchParams(body).toString()
+    body: Object.keys(body)
+      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(body[key]))
+      .join('&')
   }
   const response = await fetch(
     'https://via.banorte.com/secure3d/Solucion3DSecure.htm',
