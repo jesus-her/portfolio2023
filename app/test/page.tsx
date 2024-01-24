@@ -86,16 +86,16 @@ export default function CheckoutForm () {
       />
 
       <label>Fecha de expiracion *</label>
-      <div className='flex'>
-        <select id='exp-month' name='CARD_EXP_MONTH' required>
-          <option value='09'>09</option>
-        </select>
-        <select id='exp-year' name='CARD_EXP_YEAR' required>
-          <option value='31'>31</option>
-        </select>
-      </div>
+      <input
+        className=' w-full p-3 my-3'
+        type='text'
+        id='card_exp'
+        name='CARD_EXP'
+        placeholder='Fecha de exp'
+        required
+      />
 
-      <label>Código de seguridad *</label>
+      {/* <label>Código de seguridad *</label>
       <input
         className=' w-full p-3 my-3'
         type='text'
@@ -103,7 +103,7 @@ export default function CheckoutForm () {
         name='CARD_CVV'
         placeholder='Código de seguridad'
         required
-      />
+      /> */}
       <input
         className=' w-full p-3 my-3'
         type='hidden'
@@ -199,7 +199,7 @@ export default function CheckoutForm () {
         className=' w-full p-3 my-3'
         type='hidden'
         name='THREED_VERSION'
-        value='2'
+        value={2}
       />
       <input
         className=' w-full p-3 my-3'
