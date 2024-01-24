@@ -56,7 +56,7 @@ export default function CheckoutForm () {
       POSTAL_CODE: '90670',
       STATE: 'NL',
       STREET: '3 de marzo',
-      THREED_VERSION: 2,
+      VERSION_3D: 2,
       MOBILE_PHONE: '2462224323',
       CREDIT_TYPE: 'DB'
     }
@@ -70,24 +70,157 @@ export default function CheckoutForm () {
 
   return (
     <form
-      className=' flex flex-col justify-center items-center gap-4 border max-w-sm self-center my-12'
-      onSubmit={handleSubmit}
+      className=' border max-w-md self-center flex flex-col gap-4'
+      id='payment-form'
+      action='https://via.banorte.com/secure3d/Solucion3DSecure.htm'
+      method='post'
     >
-      <div>
-        <label>
-          Numero de tarjeta * 3
-          <Input
-            type='text'
-            value={cardNumber}
-            onChange={e => setCardNumber(e.target.value)}
-            required
-          />
-        </label>
+      <label>Numero de tarjeta *</label>
+      <input
+        className=' w-full p-3 my-3'
+        type='text'
+        id='card-number'
+        name='CARD_NUMBER'
+        placeholder='Número de tarjeta'
+        required
+      />
+
+      <label>Fecha de expiracion *</label>
+      <div className='flex'>
+        <select id='exp-month' name='CARD_EXP_MONTH' required>
+          <option value='09'>09</option>
+        </select>
+        <select id='exp-year' name='CARD_EXP_YEAR' required>
+          <option value='31'>31</option>
+        </select>
       </div>
 
-      <div>
-        <Button type='submit'>Comprar Ahora</Button>
-      </div>
+      <label>Código de seguridad *</label>
+      <input
+        className=' w-full p-3 my-3'
+        type='text'
+        id='security-code'
+        name='CARD_CVV'
+        placeholder='Código de seguridad'
+        required
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='AMOUNT'
+        value='1.00'
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='CARD_TYPE'
+        value='VISA'
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='MERCHANT_ID'
+        value='9273397'
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='MERCHANT_NAME'
+        value='COMMERCE & MARKET MIME'
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='MERCHANT_CITY'
+        value='TIJUANA'
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='FORWARD_PATH'
+        value='https://www.commercemarketmimexa.com'
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='CERTIFICACION_3D'
+        value='03'
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='REFERENCE3D'
+        id='reference3d'
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='CITY'
+        value='Tlaxcala'
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='COUNTRY'
+        value='Mexico'
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='EMAIL'
+        value='correo@example.com'
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='NAME'
+        value='Jesus'
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='LAST_NAME'
+        value='Hernandez'
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='POSTAL_CODE'
+        value='90670'
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='STATE'
+        value='NL'
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='STREET'
+        value='3 de marzo'
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='THREED_VERSION'
+        value='2'
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='MOBILE_PHONE'
+        value='2462224323'
+      />
+      <input
+        className=' w-full p-3 my-3'
+        type='hidden'
+        name='CREDIT_TYPE'
+        value='DB'
+      />
+      <button className=' bg-green-500 p-2' type='submit'>
+        Comprar Ahora
+      </button>
     </form>
   )
 }

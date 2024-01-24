@@ -25,5 +25,5 @@ export async function post3DSecure (body: any) {
 
   // await new Promise((resolve) => setTimeout(resolve, 5000))
 
-  return response.text()
+  return response
 }
