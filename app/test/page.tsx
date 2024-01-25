@@ -95,15 +95,6 @@ export default function CheckoutForm () {
         required
       />
 
-      {/* <label>Código de seguridad *</label>
-      <input
-        className=' w-full p-3 my-3'
-        type='text'
-        id='security-code'
-        name='CARD_CVV'
-        placeholder='Código de seguridad'
-        required
-      /> */}
       <input
         className=' w-full p-3 my-3'
         type='hidden'
@@ -134,7 +125,12 @@ export default function CheckoutForm () {
         name='MERCHANT_CITY'
         value='TIJUANA'
       />
-      <input type='text' className=' w-full p-3 my-3' name='FORWARD_PATH' />
+      <input
+        type='hidden'
+        className=' w-full p-3 my-3'
+        name='FORWARD_PATH'
+        value='/test'
+      />
       <input
         className=' w-full p-3 my-3'
         type='hidden'
