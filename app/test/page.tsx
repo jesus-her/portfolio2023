@@ -129,7 +129,7 @@ export default function CheckoutForm () {
         type='hidden'
         className=' w-full p-3 my-3'
         name='FORWARD_PATH'
-        value='/test'
+        value='/'
       />
       <input
         className=' w-full p-3 my-3'
