@@ -12,9 +12,11 @@ export default function handler (req: any, res: any) {
     // ...
 
     // Finalmente, envía una respuesta al cliente
-    return res.status(200).json({ message: 'Respuesta recibida y procesada' })
+    //   return res.status(200).json({ message: 'Respuesta recibida y procesada' })
   } else {
     // Método HTTP no soportado
-    return res.status(405).end()
+    console.log('not supported')
+
+    //   return res.status(405).end()
   }
 }
