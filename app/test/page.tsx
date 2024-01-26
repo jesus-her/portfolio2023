@@ -93,7 +93,7 @@ export default function CheckoutForm () {
       />
 
       <input type='hidden' name='AMOUNT' value='1.00' />
-      <input type='hidden' name='CARD_TYPE' value='VISA' />
+      <input type='hidden' name='CARD_TYPE' value='MC' />
       <input type='hidden' name='MERCHANT_ID' value='9273397' />
       <input
         type='hidden'
