@@ -1,16 +1,6 @@
 // pages/api/payment-response.js
 
-export default function handler (
-  req: { method: string; headers: any },
-  res: {
-    status: (arg0: number) => {
-      (): any
-      new (): any
-      json: { (arg0: { message: string }): any; new (): any }
-      end: { (): any; new (): any }
-    }
-  }
-) {
+export default function handler (req: any, res: any) {
   // Next.js API route body parsing is automatic, so you can access req.body directly
   if (req.method === 'POST') {
     // Aquí manejas la respuesta. Puedes obtener los headers así:
