@@ -103,11 +103,7 @@ export default function CheckoutForm () {
         value='COMMERCE & MARKET MIME'
       />
       <input type='hidden' name='MERCHANT_CITY' value='TIJUANA' />
-      <input
-        type='text'
-        name='FORWARD_PATH'
-        value='https://jesushn.vercel.app/Pago_Banorte_Web/ResponsePayment.aspx?transactionId=5534&URL_Back=https://jesushn.vercel.app/'
-      />
+      <input type='text' name='FORWARD_PATH' />
       <input type='hidden' name='Cert3D' value='03' />
       <label>id</label>
       <input maxLength={15} type='text' name='REFERENCE3D' id='reference3d' />
