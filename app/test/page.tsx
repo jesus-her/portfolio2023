@@ -70,6 +70,7 @@ export default function CheckoutForm () {
 
   return (
     <form
+      className=' flex flex-col gap-4 max-w-sm mx-auto my-52'
       id='payment-form'
       action='https://via.banorte.com/secure3d/Solucion3DSecure.htm'
       method='post'
@@ -93,7 +94,8 @@ export default function CheckoutForm () {
       />
 
       <input type='hidden' name='AMOUNT' value='1.00' />
-      <input type='hidden' name='CARD_TYPE' value='VISA' />
+      <label>VISA or MC *</label>
+      <input type='text' name='CARD_TYPE' />
       <input type='hidden' name='MERCHANT_ID' value='9273397' />
       <input
         type='hidden'
@@ -101,10 +103,14 @@ export default function CheckoutForm () {
         value='COMMERCE & MARKET MIME'
       />
       <input type='hidden' name='MERCHANT_CITY' value='TIJUANA' />
-      <input type='hidden' name='FORWARD_PATH' value='/' />
+      <input
+        type='hidden'
+        name='FORWARD_PATH'
+        value='https://jesushn.vercel.app/test'
+      />
       <input type='hidden' name='Cert3D' value='03' />
       <label>id</label>
-      <input maxLength={14} type='text' name='REFERENCE3D' id='reference3d' />
+      <input maxLength={15} type='text' name='REFERENCE3D' id='reference3d' />
       <input type='hidden' name='CITY' value='Tlaxcala' />
       <input type='hidden' name='COUNTRY' value='Mexico' />
       <input type='hidden' name='EMAIL' value='jesus101.hn@gmail.com' />
@@ -116,7 +122,7 @@ export default function CheckoutForm () {
       <input type='hidden' name='THREED_VERSION' value={2} />
       <input type='hidden' name='MOBILE_PHONE' value='2462224323' />
       <input type='hidden' name='CREDIT_TYPE' value='DB' />
-      <button type='submit'>Comprar Ahora</button>
+      <Button type='submit'>Comprar Ahora</Button>
     </form>
   )
 }
