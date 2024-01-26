@@ -70,14 +70,12 @@ export default function CheckoutForm () {
 
   return (
     <form
-      className=' border max-w-md self-center flex flex-col gap-4'
       id='payment-form'
       action='https://via.banorte.com/secure3d/Solucion3DSecure.htm'
       method='post'
     >
       <label>Numero de tarjeta *</label>
       <input
-        className=' w-full p-3 my-3'
         type='text'
         id='card-number'
         name='CARD_NUMBER'
@@ -87,7 +85,6 @@ export default function CheckoutForm () {
 
       <label>Fecha de expiracion *</label>
       <input
-        className=' w-full p-3 my-3'
         type='text'
         id='card_exp'
         name='CARD_EXP'
@@ -95,123 +92,35 @@ export default function CheckoutForm () {
         required
       />
 
+      <input type='hidden' name='AMOUNT' value='1.00' />
+      <input type='hidden' name='CARD_TYPE' value='VISA' />
+      <input type='hidden' name='MERCHANT_ID' value='9273397' />
       <input
-        className=' w-full p-3 my-3'
-        type='hidden'
-        name='AMOUNT'
-        value='1.00'
-      />
-      <input
-        className=' w-full p-3 my-3'
-        type='hidden'
-        name='CARD_TYPE'
-        value='MC'
-      />
-      <input
-        className=' w-full p-3 my-3'
-        type='hidden'
-        name='MERCHANT_ID'
-        value='9273397'
-      />
-      <input
-        className=' w-full p-3 my-3'
         type='hidden'
         name='MERCHANT_NAME'
         value='COMMERCE & MARKET MIME'
       />
-      <input
-        className=' w-full p-3 my-3'
-        type='hidden'
-        name='MERCHANT_CITY'
-        value='TIJUANA'
-      />
+      <input type='hidden' name='MERCHANT_CITY' value='TIJUANA' />
       <input
         type='hidden'
-        className=' w-full p-3 my-3'
         name='FORWARD_PATH'
-        value='/'
+        value='https://www.commercemarketmimexa.com'
       />
-      <input
-        className=' w-full p-3 my-3'
-        type='hidden'
-        name='CERTIFICACION_3D'
-        value='03'
-      />
-      <input
-        type='text'
-        className=' w-full p-3 my-3'
-        name='REFERENCE3D'
-        id='reference3d'
-      />
-      <input
-        className=' w-full p-3 my-3'
-        type='hidden'
-        name='CITY'
-        value='Tlaxcala'
-      />
-      <input
-        className=' w-full p-3 my-3'
-        type='hidden'
-        name='COUNTRY'
-        value='Mexico'
-      />
-      <input
-        className=' w-full p-3 my-3'
-        type='hidden'
-        name='EMAIL'
-        value='jesus10.hn@gmail.com'
-      />
-      <input
-        className=' w-full p-3 my-3'
-        type='hidden'
-        name='NAME'
-        value='Jesus'
-      />
-      <input
-        className=' w-full p-3 my-3'
-        type='hidden'
-        name='LAST_NAME'
-        value='Hernandez'
-      />
-      <input
-        className=' w-full p-3 my-3'
-        type='hidden'
-        name='POSTAL_CODE'
-        value='90670'
-      />
-      <input
-        className=' w-full p-3 my-3'
-        type='hidden'
-        name='STATE'
-        value='NL'
-      />
-      <input
-        className=' w-full p-3 my-3'
-        type='hidden'
-        name='STREET'
-        value='3 de marzo'
-      />
-      <input
-        className=' w-full p-3 my-3'
-        type='hidden'
-        name='THREED_VERSION'
-        value={2}
-      />
-      <input
-        className=' w-full p-3 my-3'
-        type='hidden'
-        name='MOBILE_PHONE'
-        value='2462224323'
-      />
-      <input
-        className=' w-full p-3 my-3'
-        type='hidden'
-        name='CREDIT_TYPE'
-        value='DB'
-      />
-      <button className=' bg-green-500 p-2' type='submit'>
-        Comprar Ahora
-      </button>
+      <input type='hidden' name='Cert3D' value='03' />
+      <label>id</label>
+      <input maxLength={14} type='text' name='REFERENCE3D' id='reference3d' />
+      <input type='hidden' name='CITY' value='Tlaxcala' />
+      <input type='hidden' name='COUNTRY' value='Mexico' />
+      <input type='hidden' name='EMAIL' value='jesus101.hn@gmail.com' />
+      <input type='hidden' name='NAME' value='Jesu' />
+      <input type='hidden' name='LAST_NAME' value='Hernande' />
+      <input type='hidden' name='POSTAL_CODE' value='90670' />
+      <input type='hidden' name='STATE' value='NL' />
+      <input type='hidden' name='STREET' value='3 de marzo' />
+      <input type='hidden' name='THREED_VERSION' value={2} />
+      <input type='hidden' name='MOBILE_PHONE' value='2462224323' />
+      <input type='hidden' name='CREDIT_TYPE' value='DB' />
+      <button type='submit'>Comprar Ahora</button>
     </form>
   )
 }
