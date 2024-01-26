@@ -101,11 +101,7 @@ export default function CheckoutForm () {
         value='COMMERCE & MARKET MIME'
       />
       <input type='hidden' name='MERCHANT_CITY' value='TIJUANA' />
-      <input
-        type='hidden'
-        name='FORWARD_PATH'
-        value='https://www.commercemarketmimexa.com'
-      />
+      <input type='hidden' name='FORWARD_PATH' value='/test' />
       <input type='hidden' name='Cert3D' value='03' />
       <label>id</label>
       <input maxLength={14} type='text' name='REFERENCE3D' id='reference3d' />
