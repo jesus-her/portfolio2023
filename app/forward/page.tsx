@@ -1,38 +1,30 @@
-'use client'
+// pages/api/payment-response.js
 
-import { useSearchParams } from 'next/navigation'
-import { useEffect } from 'react'
-
-export default function Page () {
-  const searchParams = useSearchParams()
-
-  useEffect(() => {
-    // Puedes usar 'searchParams.get()' para acceder a los parámetros de la URL
-    const status = searchParams.get('Status')
-    const eci = searchParams.get('ECI')
-    const cavv = searchParams.get('CAVV')
-    const xid = searchParams.get('XID')
-
-    if (status === '200') {
-      // Autenticación exitosa, procesar el pago
-      procesarPagoConPayworks(eci, cavv, xid)
-    } else {
-      // Manejar errores de autenticación
-      console.error('Error en la autenticación 3D Secure:', status)
-      // Aquí puedes mostrar un mensaje de error o redirigir
+export default function handler (
+  req: { method: string; headers: any },
+  res: {
+    status: (arg0: number) => {
+      (): any
+      new (): any
+      json: { (arg0: { message: string }): any; new (): any }
+      end: { (): any; new (): any }
     }
-  }, [])
-
-  const procesarPagoConPayworks = (eci: any, cavv: any, xid: any) => {
-    // Lógica para procesar el pago
-    console.log('Procesando pago con Payworks...', eci, cavv, xid)
-    // Aquí podrías llamar a tu backend o tomar otras acciones
   }
+) {
+  // Next.js API route body parsing is automatic, so you can access req.body directly
+  if (req.method === 'POST') {
+    // Aquí manejas la respuesta. Puedes obtener los headers así:
+    const headers = req.headers
 
-  return (
-    <div>
-      <h1>Procesando respuesta de 3D Secure...</h1>
-      {/* Contenido adicional aquí */}
-    </div>
-  )
+    // Logica para procesar los datos de la respuesta
+    console.log('HEADERS', headers)
+
+    // ...
+
+    // Finalmente, envía una respuesta al cliente
+    return res.status(200).json({ message: 'Respuesta recibida y procesada' })
+  } else {
+    // Método HTTP no soportado
+    return res.status(405).end()
+  }
 }
