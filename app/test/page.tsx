@@ -104,7 +104,7 @@ export default function CheckoutForm () {
       <input
         type='hidden'
         name='FORWARD_PATH'
-        value='https://jesushn.vercel.app/test'
+        value='https://jesushn.vercel.app'
       />
       <input type='hidden' name='Cert3D' value='03' />
       <label>id</label>
