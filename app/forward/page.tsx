@@ -6,7 +6,11 @@ export default function Page () {
 
   useEffect(() => {
     const xhr = new XMLHttpRequest()
-    xhr.open('GET', 'https://example.com', true) // Reemplaza 'https://example.com' con tu URL objetivo
+    xhr.open(
+      'GET',
+      'https://via.banorte.com/secure3d/DevuelveRespuesta.htm',
+      true
+    ) // Reemplaza 'https://example.com' con tu URL objetivo
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
         // Solicitar las cabeceras
