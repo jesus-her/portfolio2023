@@ -79,15 +79,15 @@ export default function Home () {
           Contact me here
         </Button>
         <Button
+          as='a'
           radius='full'
           startContent={<HiDownload size={22} />}
           href='/Jesus_HN_cv.pdf'
+          download
           variant='bordered'
           color='primary'
         >
-          <a href='/Jesus_HN_cv.pdf' download>
-            Download CV{' '}
-          </a>
+          Download CV{' '}
         </Button>
       </motion.div>
     </section>

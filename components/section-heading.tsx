@@ -1,21 +1,21 @@
-import React from "react";
+import React from 'react'
 
 type SectionHeadingProps = {
-  children: React.ReactNode;
-  small?: boolean;
-};
+  children: React.ReactNode
+  small?: boolean
+}
 
-export default function SectionHeading({
+export default function SectionHeading ({
   children,
-  small,
+  small
 }: SectionHeadingProps) {
   return (
     <h2
       className={` ${
-        small ? "text-2xl lg:text-3xl text-center " : "text-4xl lg:text-5xl "
-      } font-medium    text-left my-6 `}
+        small ? 'text-2xl md:text-3xl text-center ' : 'text-4xl md:text-5xl '
+      } font-medium    text-center my-6 `}
     >
       {children}
     </h2>
-  );
+  )
 }

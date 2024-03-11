@@ -12,7 +12,7 @@ import { cards } from '@/lib/data'
 
 export default function Page () {
   return (
-    <main className='flex flex-col items-center px-4 max-w-6xl mx-auto overflow-x-hidden '>
+    <main className='flex flex-col items-center px-4 max-w-7xl mx-auto '>
       <Home />
       <SectionDivider />
       <About />
