@@ -92,36 +92,6 @@ export const projectsData = [
     link: 'https://menu-app-dev.vercel.app/'
   },
   {
-    title: 'Fintech App',
-    description:
-      "A UI/UX mobile app, made with React Native (Expo CLI). It is an application created to make your investment more comfortable to manage, without long explanations, with a portfolio of modern instruments trying to balance your risk. It is an application with which you can automate your purchases and sales of cryptocurrencies, besides that, it includes the benefits of a Fintech and connects you directly to the website 'CETES'.",
-    tags: ['React Native', 'Expo CLI', 'TypeScript'],
-    imageUrl: 'https://i.imgur.com/T2gBwxf.png',
-    date: '2021 - present',
-    category: 'Mobile',
-    link: 'https://github.com/jesus-her/finanz'
-  },
-  {
-    title: 'ParkUp',
-    description:
-      'Simple and user friendly parking payment application that saves our users both time and money. ParkUp is LA’s premier and largest network smart parking platform.',
-    tags: [
-      'React Native',
-      'Firebase',
-      'MongoDB',
-      'Node js',
-      'Express',
-      'DigitalOcean',
-      'TypeScript',
-      'Nativebase'
-    ],
-    imageUrl: 'https://i.imgur.com/Y0m4s0h.jpg',
-    date: '2021 - present',
-    category: 'Mobile',
-    link: ''
-  },
-
-  {
     title: 'Estudihambre',
     description:
       'Web app to publish and find food in the University. Helps students to discover variety of products that other students offers in the University and also make it easy to publish any food or product.',
@@ -130,6 +100,27 @@ export const projectsData = [
     date: '2021 - present',
     category: 'Web',
     link: 'https://estudihambre.vercel.app/'
+  },
+  {
+    title: 'Photograph and 3D Art',
+    description:
+      'In my free time I like to learn a variety of things, among them, digital art. I started with photography, then I moved on to image manipulation with Adobe Photoshop, and today I am in the world of 3D graphics using Blender, which together with Photoshop has helped me to create everything that is shown in the @lilpix_px.',
+    tags: ['instagram: @lilpix_px'],
+    imageUrl: 'https://i.imgur.com/2bMFTmH.png',
+    date: '2021 - present',
+    category: 'Design',
+    link: 'https://www.instagram.com/lilpix_px/'
+  },
+
+  {
+    title: 'Fintech App',
+    description:
+      "A UI/UX mobile app, made with React Native (Expo CLI). It is an application created to make your investment more comfortable to manage, without long explanations, with a portfolio of modern instruments trying to balance your risk. It is an application with which you can automate your purchases and sales of cryptocurrencies, besides that, it includes the benefits of a Fintech and connects you directly to the website 'CETES'.",
+    tags: ['React Native', 'Expo CLI', 'TypeScript'],
+    imageUrl: 'https://i.imgur.com/T2gBwxf.png',
+    date: '2021 - present',
+    category: 'Mobile',
+    link: 'https://github.com/jesus-her/finanz'
   },
   {
     title: 'Quizzed App',
@@ -153,14 +144,23 @@ export const projectsData = [
   },
 
   {
-    title: 'Photograph and 3D Art',
+    title: 'ParkUp',
     description:
-      'In my free time I like to learn a variety of things, among them, digital art. I started with photography, then I moved on to image manipulation with Adobe Photoshop, and today I am in the world of 3D graphics using Blender, which together with Photoshop has helped me to create everything that is shown in the @lilpix_px.',
-    tags: ['instagram: @lilpix_px'],
-    imageUrl: 'https://i.imgur.com/2bMFTmH.png',
+      'Simple and user friendly parking payment application that saves our users both time and money. ParkUp is LA’s premier and largest network smart parking platform.',
+    tags: [
+      'React Native',
+      'Firebase',
+      'MongoDB',
+      'Node js',
+      'Express',
+      'DigitalOcean',
+      'TypeScript',
+      'Nativebase'
+    ],
+    imageUrl: 'https://i.imgur.com/Y0m4s0h.jpg',
     date: '2021 - present',
-    category: 'Design',
-    link: 'https://www.instagram.com/lilpix_px/'
+    category: 'Mobile',
+    link: ''
   },
   {
     title: 'Lilpix',
