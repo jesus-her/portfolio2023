@@ -89,7 +89,7 @@ export const projectsData = [
     imageUrl: 'https://i.imgur.com/qx2EZ0G.png',
     date: '2021 - present',
     category: 'Web',
-    link: 'https://menu-app-dev.vercel.app/dulce-trago'
+    link: 'https://menu-app-dev.vercel.app/'
   },
   {
     title: 'Fintech App',
@@ -121,24 +121,6 @@ export const projectsData = [
     link: ''
   },
 
-  {
-    title: 'ParkUp Dashboard',
-    description:
-      'Web app to manage all the data of ParkUp App. ParkUp is a mobile application developed to streamline the parking experience.  ',
-    tags: [
-      'React',
-      'MongoDB',
-      'Node js',
-      'Express',
-      'DigitalOcean',
-      'TypeScript',
-      'Material UI'
-    ],
-    imageUrl: 'https://i.imgur.com/H5iZAPA.png',
-    date: '2021 - present',
-    category: 'Web',
-    link: 'https://parkupadmin.blackcloud.app/'
-  },
   {
     title: 'Estudihambre',
     description:
