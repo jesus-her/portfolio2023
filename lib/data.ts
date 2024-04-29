@@ -92,16 +92,6 @@ export const projectsData = [
     link: 'https://nudun.vercel.app/1'
   },
   {
-    title: 'Estudihambre',
-    description:
-      'Web app to publish and find food in the University. Helps students to discover variety of products that other students offers in the University and also make it easy to publish any food or product.',
-    tags: ['React', 'Next.js', 'Next Auth', 'Tailwindcss', 'TypeScript'],
-    imageUrl: 'https://i.imgur.com/XJSYXQOl.png',
-    date: '2021 - present',
-    category: 'Web',
-    link: 'https://estudihambre.vercel.app/'
-  },
-  {
     title: 'Photograph and 3D Art',
     description:
       'In my free time I like to learn a variety of things, among them, digital art. I started with photography, then I moved on to image manipulation with Adobe Photoshop, and today I am in the world of 3D graphics using Blender, which together with Photoshop has helped me to create everything that is shown in the @lilpix_px.',
@@ -110,6 +100,36 @@ export const projectsData = [
     date: '2021 - present',
     category: 'Design',
     link: 'https://www.instagram.com/lilpix_px/'
+  },
+
+  {
+    title: 'ParkUp',
+    description:
+      'Simple and user friendly parking payment application that saves our users both time and money. ParkUp is LA’s premier and largest network smart parking platform.',
+    tags: [
+      'React Native',
+      'Firebase',
+      'MongoDB',
+      'Node js',
+      'Express',
+      'DigitalOcean',
+      'TypeScript',
+      'Nativebase'
+    ],
+    imageUrl: 'https://i.imgur.com/Y0m4s0hl.jpg',
+    date: '2021 - present',
+    category: 'Mobile',
+    link: ''
+  },
+  {
+    title: 'Estudihambre',
+    description:
+      'Web app to publish and find food in the University. Helps students to discover variety of products that other students offers in the University and also make it easy to publish any food or product.',
+    tags: ['React', 'Next.js', 'Next Auth', 'Tailwindcss', 'TypeScript'],
+    imageUrl: 'https://i.imgur.com/XJSYXQOl.png',
+    date: '2021 - present',
+    category: 'Web',
+    link: 'https://estudihambre.vercel.app/'
   },
 
   {
@@ -143,25 +163,6 @@ export const projectsData = [
     link: 'https://github.com/jesus-her/the_lilpix_app'
   },
 
-  {
-    title: 'ParkUp',
-    description:
-      'Simple and user friendly parking payment application that saves our users both time and money. ParkUp is LA’s premier and largest network smart parking platform.',
-    tags: [
-      'React Native',
-      'Firebase',
-      'MongoDB',
-      'Node js',
-      'Express',
-      'DigitalOcean',
-      'TypeScript',
-      'Nativebase'
-    ],
-    imageUrl: 'https://i.imgur.com/Y0m4s0hl.jpg',
-    date: '2021 - present',
-    category: 'Mobile',
-    link: ''
-  },
   {
     title: 'Lilpix',
     description:
