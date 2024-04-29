@@ -86,17 +86,17 @@ export const projectsData = [
     description:
       'This web application, crafted with Next.js for the frontend and Django for the backend, offers an engaging and user-friendly interface for browsing restaurant menus. With a clean and modern UI, users can effortlessly view a variety of food and drink options, complete with high-quality images, descriptions, and pricing. An integrated admin panel allows individual restaurants to manage and update their product listings with ease. Planned future enhancements include the introduction of websockets for real-time features such as order notifications and direct customer communication. ',
     tags: ['Next.js 14', 'Zustand', 'TypeScript', 'Django'],
-    imageUrl: 'https://i.imgur.com/qx2EZ0G.png',
+    imageUrl: 'https://i.imgur.com/qx2EZ0Gl.png',
     date: '2021 - present',
     category: 'Web',
-    link: 'https://menu-app-dev.vercel.app/'
+    link: 'https://nudun.vercel.app/1'
   },
   {
     title: 'Estudihambre',
     description:
       'Web app to publish and find food in the University. Helps students to discover variety of products that other students offers in the University and also make it easy to publish any food or product.',
     tags: ['React', 'Next.js', 'Next Auth', 'Tailwindcss', 'TypeScript'],
-    imageUrl: 'https://i.imgur.com/YGRrWy7.png?1',
+    imageUrl: 'https://i.imgur.com/XJSYXQOl.png',
     date: '2021 - present',
     category: 'Web',
     link: 'https://estudihambre.vercel.app/'
@@ -127,7 +127,7 @@ export const projectsData = [
     description:
       "A fully functional mobile app, made with React Native and firebase. It is an application in which you can create your own quiz and it will be published for everyone who has the app, you can play and answer other people's quizzes and get a place on the leaderboar.",
     tags: ['React Native', 'Expo CLI', 'Firebase', 'Typescript'],
-    imageUrl: 'https://i.imgur.com/Xf2Dvg0.png',
+    imageUrl: 'https://i.imgur.com/Xf2Dvg0l.png',
     date: '2021 - present',
     category: 'Mobile',
     link: 'https://github.com/jesus-her/MeetMe'
@@ -137,7 +137,7 @@ export const projectsData = [
     description:
       'A mobile application, made with React Native in which you can download my wallpapers.',
     tags: ['React Native', 'Expo CLI', 'Strapi'],
-    imageUrl: 'https://i.imgur.com/GSZUID3.png',
+    imageUrl: 'https://i.imgur.com/GSZUID3l.png',
     date: '2021 - present',
     category: 'Mobile',
     link: 'https://github.com/jesus-her/the_lilpix_app'
@@ -157,7 +157,7 @@ export const projectsData = [
       'TypeScript',
       'Nativebase'
     ],
-    imageUrl: 'https://i.imgur.com/Y0m4s0h.jpg',
+    imageUrl: 'https://i.imgur.com/Y0m4s0hl.jpg',
     date: '2021 - present',
     category: 'Mobile',
     link: ''
@@ -167,7 +167,7 @@ export const projectsData = [
     description:
       'My really first web app using React. This website is a image gallery of my artwork',
     tags: ['React', 'CSS', 'Strapi'],
-    imageUrl: 'https://i.imgur.com/FTqP56t.png',
+    imageUrl: 'https://i.imgur.com/FTqP56tl.png',
     date: '2021 - present',
     category: 'Frontend',
     link: ''

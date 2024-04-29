@@ -24,28 +24,35 @@ export default function Projects () {
       className='text-center leading-8  scroll-mt-4'
     >
       <SectionHeading>My projects</SectionHeading>
-      {/* 
-      <Tabs
-        radius='full'
-        color='secondary'
-        className=' sticky top-4 z-50 '
-        aria-label='Dynamic tabs'
-        selectedKey={selected}
-        // @ts-ignore
-        onSelectionChange={setSelected}
-        // @ts-ignore
-        items={projectsCategories}
-      >
-        {category => (
-          <Tab
-            // href='#projects'
-            key={category.id}
-            title={category.name}
-          >
-
-          </Tab>
-        )}
-      </Tabs> */}
+      {/* <div className=' masonry md:masonry-md lg:masonry-lg  '>
+        <Tabs
+          radius='full'
+          color='secondary'
+          className=' sticky top-4 z-50 '
+          aria-label='Dynamic tabs'
+          selectedKey={selected}
+          // @ts-ignore
+          onSelectionChange={setSelected}
+          // @ts-ignore
+          items={projectsCategories}
+        >
+          {category => (
+            <Tab
+              // href='#projects'
+              key={category.id}
+              title={category.name}
+            >
+              {projectsData
+                .filter(project => project.category === category.name)
+                .map((project, index) => (
+                  <React.Fragment key={index}>
+                    <Project {...project} />
+                  </React.Fragment>
+                ))}
+            </Tab>
+          )}
+        </Tabs>
+      </div> */}
       <div className='relative  flex'>
         <div className=' masonry md:masonry-md lg:masonry-lg  '>
           {projectsData
