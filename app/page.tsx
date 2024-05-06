@@ -15,13 +15,13 @@ export default function Page () {
     <main className='flex flex-col items-center px-4 max-w-7xl mx-auto '>
       <Home />
       <SectionDivider />
-      <About />
-
-      <SectionDivider />
-
       <Projects />
 
       <Skills />
+      <SectionDivider />
+
+      <About />
+
       <SectionDivider />
 
       <Experience />

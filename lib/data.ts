@@ -25,11 +25,6 @@ export const links = [
     icon: React.createElement(HiHome)
   },
   {
-    name: 'About',
-    hash: '#about',
-    icon: React.createElement(FaUserAstronaut)
-  },
-  {
     name: 'Projects',
     hash: '#projects',
     icon: React.createElement(BsStack)
@@ -38,6 +33,11 @@ export const links = [
     name: 'Skills',
     hash: '#skills',
     icon: React.createElement(FaPencilAlt)
+  },
+  {
+    name: 'About',
+    hash: '#about',
+    icon: React.createElement(FaUserAstronaut)
   },
   {
     name: 'Experience',
