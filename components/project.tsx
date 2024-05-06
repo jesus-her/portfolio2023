@@ -23,7 +23,7 @@ export default function Project ({
 }: ProjectProps) {
   return (
     <div className='relative rounded-xl break-inside  mb-4 flex-1 flex flex-col border shadow-sm dark:border-[#2c2c2c] border-gray-200'>
-      <div className=' opacity-50'>
+      <div className=' opacity-90'>
         <Image
           width='100%'
           src={imageUrl}
@@ -131,7 +131,7 @@ export default function Project ({
               </defs>
             </svg>
           </div>
-          <p className='text-left text-sm leading-relaxed  opacity-80 line-clamp-3'>
+          <p className='text-left text-base leading-relaxed opacity-90 line-clamp-3'>
             {description}
           </p>
           {link && (
@@ -140,7 +140,7 @@ export default function Project ({
               href={link}
               radius='full'
               target='blank'
-              className='font-semibold text-base dark:bg-white bg-black px-12 py-3 mt-6 uppercase '
+              className='font-semibold text-base dark:bg-white bg-black px-12 py-3 mt-6 uppercase z-10'
             >
               <Link
                 showAnchorIcon

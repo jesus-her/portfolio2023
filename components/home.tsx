@@ -48,12 +48,13 @@ export default function Home () {
         I'm Jesús.
         <br />
         <span className=' bg-clip-text bg-gradient-to-b from-[#00D4DA] via-[#00B9E2] to-[#0080EE] text-transparent'>
-          full-stack developer
+          Web
         </span>{' '}
         and{' '}
         <span className=' bg-clip-text bg-gradient-to-b from-[#0080EE] via-[#00B9E2] to-[#00D4DA] text-transparent'>
-          IT enthusiast.
+          mobile{' '}
         </span>
+        developer.
       </motion.h2>
 
       <motion.div

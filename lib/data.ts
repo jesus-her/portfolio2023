@@ -82,24 +82,42 @@ export const experiencesData = [
 ] as const
 export const projectsData = [
   {
-    title: 'Menu Web App',
+    title: 'Nudun',
     description:
-      'This web application, crafted with Next.js for the frontend and Django for the backend, offers an engaging and user-friendly interface for browsing restaurant menus. With a clean and modern UI, users can effortlessly view a variety of food and drink options, complete with high-quality images, descriptions, and pricing. An integrated admin panel allows individual restaurants to manage and update their product listings with ease. Planned future enhancements include the introduction of websockets for real-time features such as order notifications and direct customer communication. ',
-    tags: ['Next.js 14', 'Zustand', 'TypeScript', 'Django'],
-    imageUrl: 'https://i.imgur.com/qx2EZ0Gl.png',
+      'This web application, crafted with Next.js for the frontend and Express for the backend and also using socket.io for a real-time updates in the shared cart section, offers an engaging and user-friendly interface for browsing restaurant menus. With a clean and modern UI, users can effortlessly view a variety of food and drink options, complete with high-quality images, descriptions, and pricing. An integrated admin panel allows individual restaurants to manage and update their product listings with ease. Planned future enhancements include the introduction of websockets for real-time features such as order notifications and direct customer communication. ',
+    tags: [
+      'Next.js 14',
+      'Zustand',
+      'TypeScript',
+      'Node.js',
+      'Express',
+      'Socket.io',
+      'PostgreSQL'
+    ],
+    imageUrl: 'https://i.imgur.com/Cu0AM36l.jpg',
     date: '2021 - present',
     category: 'Web',
     link: 'https://nudun.vercel.app/1'
   },
+  // {
+  //   title: 'Photograph and 3D Art',
+  //   description:
+  //     'In my free time I like to learn a variety of things, among them, digital art. I started with photography, then I moved on to image manipulation with Adobe Photoshop, and today I am in the world of 3D graphics using Blender, which together with Photoshop has helped me to create everything that is shown in the @lilpix_px.',
+  //   tags: ['instagram: @lilpix_px'],
+  //   imageUrl: 'https://i.imgur.com/2bMFTmH.png',
+  //   date: '2021 - present',
+  //   category: 'Design',
+  //   link: 'https://www.instagram.com/lilpix_px/'
+  // },
   {
-    title: 'Photograph and 3D Art',
+    title: 'Estudihambre',
     description:
-      'In my free time I like to learn a variety of things, among them, digital art. I started with photography, then I moved on to image manipulation with Adobe Photoshop, and today I am in the world of 3D graphics using Blender, which together with Photoshop has helped me to create everything that is shown in the @lilpix_px.',
-    tags: ['instagram: @lilpix_px'],
-    imageUrl: 'https://i.imgur.com/2bMFTmH.png',
+      'Web app to publish and find food in the University. Helps students to discover variety of products that other students offers in the University and also make it easy to publish any food or product.',
+    tags: ['React', 'Next.js', 'Next Auth', 'Tailwindcss', 'TypeScript'],
+    imageUrl: 'https://i.imgur.com/ORmGH2dl.jpg',
     date: '2021 - present',
-    category: 'Design',
-    link: 'https://www.instagram.com/lilpix_px/'
+    category: 'Web',
+    link: 'https://estudihambre.vercel.app/'
   },
 
   {
@@ -110,7 +128,7 @@ export const projectsData = [
       'React Native',
       'Firebase',
       'MongoDB',
-      'Node js',
+      'Node.js',
       'Express',
       'DigitalOcean',
       'TypeScript',
@@ -121,27 +139,7 @@ export const projectsData = [
     category: 'Mobile',
     link: ''
   },
-  {
-    title: 'Estudihambre',
-    description:
-      'Web app to publish and find food in the University. Helps students to discover variety of products that other students offers in the University and also make it easy to publish any food or product.',
-    tags: ['React', 'Next.js', 'Next Auth', 'Tailwindcss', 'TypeScript'],
-    imageUrl: 'https://i.imgur.com/XJSYXQOl.png',
-    date: '2021 - present',
-    category: 'Web',
-    link: 'https://estudihambre.vercel.app/'
-  },
 
-  {
-    title: 'Fintech App',
-    description:
-      "A UI/UX mobile app, made with React Native (Expo CLI). It is an application created to make your investment more comfortable to manage, without long explanations, with a portfolio of modern instruments trying to balance your risk. It is an application with which you can automate your purchases and sales of cryptocurrencies, besides that, it includes the benefits of a Fintech and connects you directly to the website 'CETES'.",
-    tags: ['React Native', 'Expo CLI', 'TypeScript'],
-    imageUrl: 'https://i.imgur.com/T2gBwxf.png',
-    date: '2021 - present',
-    category: 'Mobile',
-    link: 'https://github.com/jesus-her/finanz'
-  },
   {
     title: 'Quizzed App',
     description:
@@ -151,6 +149,16 @@ export const projectsData = [
     date: '2021 - present',
     category: 'Mobile',
     link: 'https://github.com/jesus-her/MeetMe'
+  },
+  {
+    title: 'Fintech App',
+    description:
+      "A UI/UX mobile app, made with React Native (Expo CLI). It is an application created to make your investment more comfortable to manage, without long explanations, with a portfolio of modern instruments trying to balance your risk. It is an application with which you can automate your purchases and sales of cryptocurrencies, besides that, it includes the benefits of a Fintech and connects you directly to the website 'CETES'.",
+    tags: ['React Native', 'Expo CLI', 'TypeScript'],
+    imageUrl: 'https://i.imgur.com/T2gBwxf.png',
+    date: '2021 - present',
+    category: 'Mobile',
+    link: 'https://github.com/jesus-her/finanz'
   },
   {
     title: 'Wallpaper App',

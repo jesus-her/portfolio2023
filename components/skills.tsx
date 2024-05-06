@@ -13,7 +13,7 @@ export default function Skills () {
     <section
       id='skills'
       ref={ref}
-      className='text-center leading-8  scroll-mt-4 relative'
+      className='text-center leading-8  scroll-mt-4 relative mt-8'
     >
       <SectionHeading small>My Skills</SectionHeading>
 
