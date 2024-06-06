@@ -26,9 +26,9 @@ export default function Home () {
           type: 'tween',
           duration: 0.2
         }}
-        className='font-bold text-7xl '
+        className='font-bold text-3xl '
       >
-        <h1>Hello!</h1>
+        {/* <h1>Hello!</h1> */}
         <Spacer y={8} />
         <Chip
           variant='flat'

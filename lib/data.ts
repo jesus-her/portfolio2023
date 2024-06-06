@@ -82,6 +82,7 @@ export const experiencesData = [
 ] as const
 export const projectsData = [
   {
+    id: 1,
     title: 'Nudun',
     description:
       'This web application, crafted with Next.js for the frontend and Express for the backend and also using socket.io for a real-time updates in the shared cart section, offers an engaging and user-friendly interface for browsing restaurant menus. With a clean and modern UI, users can effortlessly view a variety of food and drink options, complete with high-quality images, descriptions, and pricing. An integrated admin panel allows individual restaurants to manage and update their product listings with ease. Planned future enhancements include the introduction of websockets for real-time features such as order notifications and direct customer communication. ',
@@ -94,10 +95,10 @@ export const projectsData = [
       'Socket.io',
       'PostgreSQL'
     ],
-    imageUrl: 'https://i.imgur.com/Cu0AM36l.jpg',
+    imageUrl: 'https://i.imgur.com/IqmgFF7l.jpg',
     date: '2021 - present',
     category: 'Web',
-    link: 'https://nudun.vercel.app/1'
+    link: 'https://nudun.app/'
   },
   // {
   //   title: 'Photograph and 3D Art',
@@ -110,6 +111,7 @@ export const projectsData = [
   //   link: 'https://www.instagram.com/lilpix_px/'
   // },
   {
+    id: 2,
     title: 'Estudihambre',
     description:
       'Web app to publish and find food in the University. Helps students to discover variety of products that other students offers in the University and also make it easy to publish any food or product.',
@@ -121,6 +123,7 @@ export const projectsData = [
   },
 
   {
+    id: 3,
     title: 'ParkUp',
     description:
       'Simple and user friendly parking payment application that saves our users both time and money. ParkUp is LA’s premier and largest network smart parking platform.',
@@ -141,6 +144,8 @@ export const projectsData = [
   },
 
   {
+    id: 4,
+
     title: 'Quizzed App',
     description:
       "A fully functional mobile app, made with React Native and firebase. It is an application in which you can create your own quiz and it will be published for everyone who has the app, you can play and answer other people's quizzes and get a place on the leaderboar.",
@@ -151,6 +156,7 @@ export const projectsData = [
     link: 'https://github.com/jesus-her/MeetMe'
   },
   {
+    id: 5,
     title: 'Fintech App',
     description:
       "A UI/UX mobile app, made with React Native (Expo CLI). It is an application created to make your investment more comfortable to manage, without long explanations, with a portfolio of modern instruments trying to balance your risk. It is an application with which you can automate your purchases and sales of cryptocurrencies, besides that, it includes the benefits of a Fintech and connects you directly to the website 'CETES'.",
@@ -161,6 +167,7 @@ export const projectsData = [
     link: 'https://github.com/jesus-her/finanz'
   },
   {
+    id: 6,
     title: 'Wallpaper App',
     description:
       'A mobile application, made with React Native in which you can download my wallpapers.',
@@ -172,6 +179,8 @@ export const projectsData = [
   },
 
   {
+    id: 7,
+
     title: 'Lilpix',
     description:
       'My really first web app using React. This website is a image gallery of my artwork',

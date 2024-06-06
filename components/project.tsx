@@ -10,6 +10,7 @@ import {
   Image,
   Link
 } from '@nextui-org/react'
+import { useState } from 'react'
 
 type ProjectProps = typeof projectsData[number]
 
@@ -19,8 +20,17 @@ export default function Project ({
   tags,
   imageUrl,
   category,
-  link
+  link,
+  id
 }: ProjectProps) {
+  const [expandedDescription, setExpandedDescription] = useState<number | null>(
+    null
+  )
+
+  // Handler to toggle the expanded state of the banner description
+  const toggleDescription = (bannerId: number) => {
+    setExpandedDescription(prev => (prev === bannerId ? null : bannerId))
+  }
   return (
     <div className='relative rounded-xl break-inside  mb-4 flex-1 flex flex-col border shadow-sm dark:border-[#2c2c2c] border-gray-200'>
       <div className=' opacity-90'>
@@ -65,9 +75,6 @@ export default function Project ({
       <Card className=' bg-trasparent relative'>
         <CardBody className='overflow-visible'>
           <Card
-            as={Link}
-            href={link}
-            target='blank'
             className='py-4'
             // isPressable
           >
@@ -131,9 +138,28 @@ export default function Project ({
               </defs>
             </svg>
           </div>
-          <p className='text-left text-base leading-relaxed opacity-90 line-clamp-3'>
-            {description}
-          </p>
+          {expandedDescription === id ? (
+            // Full description with "see less" button
+            <p
+              onClick={() => {
+                toggleDescription(id)
+              }}
+              className='text-base cursor-pointer '
+            >
+              {description}
+            </p>
+          ) : (
+            // Truncated description with "see more" button
+            <p
+              onClick={() => {
+                toggleDescription(id)
+              }}
+              className='text-base cursor-pointer  line-clamp-3'
+            >
+              {description}
+            </p>
+          )}
+
           {link && (
             <Button
               as={Link}
