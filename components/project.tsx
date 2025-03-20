@@ -27,7 +27,6 @@ export default function Project ({
     null
   )
 
-  // Handler to toggle the expanded state of the banner description
   const toggleDescription = (bannerId: number) => {
     setExpandedDescription(prev => (prev === bannerId ? null : bannerId))
   }

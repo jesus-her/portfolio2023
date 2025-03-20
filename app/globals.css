@@ -235,8 +235,9 @@ html.dark .gridLine {
   position: absolute;
   top: 0;
   left: 0;
-  filter: blur(90px) saturate(777%) !important;
+  filter: blur(90px) saturate(444%) !important;
   pointer-events: none;
+
   /* animation: scaleAnimation 4s infinite alternate ease-in-out; */
 }
 

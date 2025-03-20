@@ -95,31 +95,10 @@ export const projectsData = [
       'Socket.io',
       'PostgreSQL'
     ],
-    imageUrl: 'https://i.imgur.com/IqmgFF7l.jpg',
+    imageUrl: '/nudun.png',
     date: '2021 - present',
     category: 'Web',
     link: 'https://nudun.app/'
-  },
-  // {
-  //   title: 'Photograph and 3D Art',
-  //   description:
-  //     'In my free time I like to learn a variety of things, among them, digital art. I started with photography, then I moved on to image manipulation with Adobe Photoshop, and today I am in the world of 3D graphics using Blender, which together with Photoshop has helped me to create everything that is shown in the @lilpix_px.',
-  //   tags: ['instagram: @lilpix_px'],
-  //   imageUrl: 'https://i.imgur.com/2bMFTmH.png',
-  //   date: '2021 - present',
-  //   category: 'Design',
-  //   link: 'https://www.instagram.com/lilpix_px/'
-  // },
-  {
-    id: 2,
-    title: 'Estudihambre',
-    description:
-      'Web app to publish and find food in the University. Helps students to discover variety of products that other students offers in the University and also make it easy to publish any food or product.',
-    tags: ['React', 'Next.js', 'Next Auth', 'Tailwindcss', 'TypeScript'],
-    imageUrl: 'https://i.imgur.com/ORmGH2dl.jpg',
-    date: '2021 - present',
-    category: 'Web',
-    link: 'https://estudihambre.vercel.app/'
   },
 
   {
@@ -145,7 +124,6 @@ export const projectsData = [
 
   {
     id: 4,
-
     title: 'Quizzed App',
     description:
       "A fully functional mobile app, made with React Native and firebase. It is an application in which you can create your own quiz and it will be published for everyone who has the app, you can play and answer other people's quizzes and get a place on the leaderboar.",
@@ -156,6 +134,25 @@ export const projectsData = [
     link: 'https://github.com/jesus-her/MeetMe'
   },
   {
+    id: 8,
+    title: 'Momo Shop',
+    description:
+      'Momo Shop is an e-commerce platform specialized in the sale of Momo products, featuring secure and reliable payment processing powered by Stripe. Developed with Next.js 14, TypeScript, Prisma, and PostgreSQL, the application offers a smooth and modern shopping experience. From browsing a variety of Momo products to completing purchases, the process is straightforward and intuitive. By integrating Stripe, users benefit from instant transactions and real-time confirmations, ensuring confidence and satisfaction in every order.',
+    tags: [
+      'Next.js 14',
+      'Stripe',
+      'Zustand',
+      'TypeScript',
+      'Prisma',
+      'PostgreSQL'
+    ],
+    imageUrl: '/momo.png',
+    date: '2021 - present',
+    category: 'Web',
+    link: 'https://momo-collection.vercel.app/'
+  },
+
+  {
     id: 5,
     title: 'Fintech App',
     description:
@@ -165,6 +162,17 @@ export const projectsData = [
     date: '2021 - present',
     category: 'Mobile',
     link: 'https://github.com/jesus-her/finanz'
+  },
+  {
+    id: 2,
+    title: 'Estudihambre',
+    description:
+      'Web app to publish and find food in the University. Helps students to discover variety of products that other students offers in the University and also make it easy to publish any food or product.',
+    tags: ['React', 'Next.js', 'Next Auth', 'Tailwindcss', 'TypeScript'],
+    imageUrl: '/estudihambre.jpg',
+    date: '2021 - present',
+    category: 'Web',
+    link: 'https://estudihambre.vercel.app/'
   },
   {
     id: 6,
